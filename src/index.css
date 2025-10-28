@@ -1,0 +1,591 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Import Google Fonts */
+/* @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700;900&family=Inter:wght@400;500;600;700&display=swap'); */
+
+@import url('https://fonts.googleapis.com/css2?family=Epilogue:ital,wght@0,100..900;1,100..900&display=swap');
+
+/* Design System Variables - Logo-driven Palette */
+:root {
+  /* Primary */
+  --wc-primary-deep: #0F3255;
+  --wc-primary-teal: #08A6A8;
+  --wc-warm-gold: #D8B66A;
+
+  /* Neutrals */
+  --wc-slate: #4C545C;
+  --wc-paper: #F6F5F2;
+  --wc-charcoal: #111214;
+  --wc-muted: #8A8F93;
+  --wc-white: #FFFFFF;
+
+  /* Interactions */
+  --wc-cta-hover: #077E7F;
+  --wc-focus: rgba(8,166,168,0.18);
+
+  /* Typography scale */
+  --font-body: "Epilogue", "Epilogue", "Epilogue";
+  --font-display: "Epilogue", "Epilogue";
+
+  /* Easing */
+  --easing: cubic-bezier(.22,.9,.32,1);
+}
+
+/* Custom font classes */
+.font-serif {
+  font-family: 'Epilogue';
+}
+
+.font-sans {
+  font-family: 'Epilogue';
+}
+
+/* Updated Button Patterns */
+.btn-primary {
+  background: var(--wc-primary-teal);
+  color: var(--wc-white);
+  padding: 12px 22px;
+  border-radius: 8px;
+  font-weight: 600;
+  transition: transform .18s var(--easing), box-shadow .18s var(--easing), background-color .18s var(--easing);
+  border: none;
+  cursor: pointer;
+}
+
+.btn-primary:hover {
+  background: var(--wc-cta-hover);
+  transform: translateY(-2px);
+  box-shadow: 0 10px 30px rgba(8,166,168,0.12);
+}
+
+.btn-primary:focus {
+  outline: none;
+  box-shadow: 0 0 0 6px var(--wc-focus);
+}
+
+.btn-outline {
+  background: transparent;
+  color: var(--wc-primary-deep);
+  border: 1px solid var(--wc-primary-deep);
+  padding: 10px 20px;
+  border-radius: 8px;
+  font-weight: 500;
+  transition: all .18s var(--easing);
+  cursor: pointer;
+}
+
+.btn-outline:hover {
+  background: rgba(15,50,85,0.04);
+}
+
+.badge-gold {
+  background: var(--wc-warm-gold);
+  color: var(--wc-primary-deep);
+  padding: 6px 10px;
+  border-radius: 6px;
+  font-weight: 700;
+  font-size: 0.875rem;
+}
+
+/* Custom animation keyframes */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(18px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes slideInLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes slideInRight {
+  from {
+    opacity: 0;
+    transform: translateX(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes scaleIn {
+  from {
+    opacity: 0;
+    transform: scale(0.95);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+@keyframes heroEntranceStagger {
+  0% {
+    opacity: 0;
+    transform: translateY(18px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes parallaxFloat {
+  0%, 100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+@keyframes strokeDraw {
+  from {
+    stroke-dashoffset: 1000;
+  }
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
+/* Logo transformation stages */
+@keyframes logoStage1 {
+  0% { opacity: 1; }
+  70% { opacity: 1; }
+  100% { opacity: 0; }
+}
+
+@keyframes logoStage2 {
+  0% { opacity: 0; }
+  10% { opacity: 0; }
+  30% { opacity: 1; }
+  90% { opacity: 1; }
+  100% { opacity: 0; }
+}
+
+@keyframes logoStage3 {
+  0% { opacity: 0; }
+  40% { opacity: 0; }
+  60% { opacity: 1; }
+  95% { opacity: 1; }
+  100% { opacity: 0; }
+}
+
+@keyframes logoStage4 {
+  0% { opacity: 0; }
+  70% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+@keyframes fadeOut {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+
+@keyframes slideInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes counterTick {
+  from {
+    opacity: 0;
+    transform: scale(0.8);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+@keyframes shake {
+  0%, 100% { transform: translateX(0); }
+  25% { transform: translateX(-8px); }
+  75% { transform: translateX(8px); }
+}
+
+@keyframes bgWashSlide {
+  0% {
+    background-position: -100% 0;
+  }
+  100% {
+    background-position: 100% 0;
+  }
+}
+/* Animation classes */
+.animate-fade-in-up {
+  animation: fadeInUp 0.6s cubic-bezier(0.22, 0.9, 0.32, 1) forwards;
+}
+
+.animate-fade-in {
+  animation: fadeIn 0.6s cubic-bezier(0.22, 0.9, 0.32, 1) forwards;
+}
+
+.animate-slide-in-left {
+  animation: slideInLeft 0.6s cubic-bezier(0.22, 0.9, 0.32, 1) forwards;
+}
+
+.animate-slide-in-right {
+  animation: slideInRight 0.6s cubic-bezier(0.22, 0.9, 0.32, 1) forwards;
+}
+
+.animate-scale-in {
+  animation: scaleIn 0.6s cubic-bezier(0.22, 0.9, 0.32, 1) forwards;
+}
+
+/* Hero animations with stagger */
+.animate-hero-stagger-1 {
+  animation: heroEntranceStagger 900ms cubic-bezier(0.22, 0.9, 0.32, 1) forwards;
+  animation-delay: 0ms;
+}
+
+.animate-hero-stagger-2 {
+  animation: heroEntranceStagger 900ms cubic-bezier(0.22, 0.9, 0.32, 1) forwards;
+  animation-delay: 80ms;
+}
+
+.animate-hero-stagger-3 {
+  animation: heroEntranceStagger 700ms cubic-bezier(0.22, 0.9, 0.32, 1) forwards;
+  animation-delay: 160ms;
+}
+
+.animate-hero-stagger-4 {
+  animation: heroEntranceStagger 700ms cubic-bezier(0.22, 0.9, 0.32, 1) forwards;
+  animation-delay: 260ms;
+}
+
+/* Card animations */
+.animate-card-hover {
+  transition: transform 180ms cubic-bezier(0.22, 0.9, 0.32, 1), 
+              box-shadow 180ms cubic-bezier(0.22, 0.9, 0.32, 1);
+}
+
+.animate-card-hover:hover {
+  transform: translateY(-2px) scale(1.03);
+  box-shadow: 0 10px 30px rgba(8,166,168,0.12);
+}
+
+/* Parallax effects */
+.animate-parallax-float {
+  animation: parallaxFloat 6s ease-in-out infinite;
+}
+
+/* SVG line drawing */
+.animate-stroke-draw {
+  stroke-dasharray: 1000;
+  stroke-dashoffset: 1000;
+  animation: strokeDraw 2000ms cubic-bezier(0.22, 0.9, 0.32, 1) forwards;
+}
+
+/* Sketch-to-final animations */
+.animate-fade-out {
+  animation: fadeOut 500ms cubic-bezier(0.22, 0.9, 0.32, 1) forwards;
+}
+
+.animate-slide-in-up {
+  animation: slideInUp 600ms cubic-bezier(0.22, 0.9, 0.32, 1) forwards;
+}
+
+/* Process step hover effects */
+.sketch-element {
+  transition: opacity 500ms cubic-bezier(0.22, 0.9, 0.32, 1);
+}
+
+.final-element {
+  transition: opacity 500ms cubic-bezier(0.22, 0.9, 0.32, 1);
+}
+
+/* Enhanced project card animations */
+.group:hover .sketch-element {
+  opacity: 0;
+}
+
+.group:hover .final-element {
+  opacity: 1;
+}
+
+/* Counter animations */
+.animate-counter-tick {
+  animation: counterTick 100ms cubic-bezier(0.22, 0.9, 0.32, 1);
+}
+
+/* Form feedback */
+.animate-shake {
+  animation: shake 300ms cubic-bezier(0.22, 0.9, 0.32, 1);
+}
+
+/* Page transitions */
+.page-transition-enter {
+  opacity: 0;
+  transform: translateY(6px);
+}
+
+.page-transition-enter-active {
+  opacity: 1;
+  transform: translateY(0);
+  transition: opacity 380ms cubic-bezier(0.22, 0.9, 0.32, 1),
+              transform 380ms cubic-bezier(0.22, 0.9, 0.32, 1);
+}
+
+.page-transition-exit {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.page-transition-exit-active {
+  opacity: 0;
+  transform: translateY(-6px);
+  transition: opacity 380ms cubic-bezier(0.22, 0.9, 0.32, 1),
+              transform 380ms cubic-bezier(0.22, 0.9, 0.32, 1);
+}
+
+/* Storyboard panel animations */
+.storyboard-panel {
+  opacity: 0;
+  transform: translateY(18px);
+  animation: fadeInUp 380ms cubic-bezier(0.22, 0.9, 0.32, 1) forwards;
+}
+
+.storyboard-panel-delay-1 { animation-delay: 80ms; }
+.storyboard-panel-delay-2 { animation-delay: 160ms; }
+.storyboard-panel-delay-3 { animation-delay: 240ms; }
+.storyboard-panel-delay-4 { animation-delay: 320ms; }
+.storyboard-panel-delay-5 { animation-delay: 400ms; }
+.storyboard-panel-delay-6 { animation-delay: 480ms; }
+
+/* Sketch to final transitions */
+.sketch-to-final {
+  position: relative;
+}
+
+.sketch-to-final::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 100 100'%3E%3Cpath stroke='%23111214' stroke-width='0.5' d='M20 20h60M20 30h40M20 40h50'/%3E%3C/svg%3E");
+  opacity: 0.3;
+  transition: opacity 0.3s ease;
+}
+
+.sketch-to-final:hover::before {
+  opacity: 0;
+}
+
+/* Process step animations */
+.process-step {
+  position: relative;
+}
+
+.process-step-sketch {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  opacity: 1;
+  transition: opacity 0.5s ease;
+}
+
+.process-step:hover .process-step-sketch {
+  opacity: 0;
+}
+
+.process-step-final {
+  opacity: 0;
+  transition: opacity 0.5s ease;
+}
+
+.process-step:hover .process-step-final {
+  opacity: 1;
+}
+
+/* Logo construction animation */
+@keyframes logoConstruct {
+  0% {
+    stroke-dashoffset: 1000;
+    opacity: 0.3;
+  }
+  70% {
+    stroke-dashoffset: 0;
+    opacity: 0.3;
+  }
+  100% {
+    stroke-dashoffset: 0;
+    opacity: 0;
+  }
+}
+
+.animate-logo-construct {
+  animation: logoConstruct 3000ms cubic-bezier(0.22, 0.9, 0.32, 1) forwards;
+}
+
+/* Logo transformation stage animations */
+.animate-logo-stage-1 {
+  animation: logoStage1 8000ms cubic-bezier(0.22, 0.9, 0.32, 1) forwards;
+}
+
+.animate-logo-stage-2 {
+  animation: logoStage2 8000ms cubic-bezier(0.22, 0.9, 0.32, 1) forwards;
+}
+
+.animate-logo-stage-3 {
+  animation: logoStage3 8000ms cubic-bezier(0.22, 0.9, 0.32, 1) forwards;
+}
+
+.animate-logo-stage-4 {
+  animation: logoStage4 8000ms cubic-bezier(0.22, 0.9, 0.32, 1) forwards;
+}
+
+/* Custom utilities */
+.cubic-bezier-smooth {
+  transition-timing-function: cubic-bezier(0.22, 0.9, 0.32, 1);
+}
+
+/* Base styles */
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Reduced motion preferences */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--wc-paper);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--wc-primary-teal);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--wc-cta-hover);
+}
+
+/* Focus styles for accessibility */
+.focus-visible:focus {
+  outline: 2px solid var(--wc-primary-teal);
+  outline-offset: 2px;
+}
+
+/* High contrast mode support */
+@media (prefers-contrast: high) {
+  .text-gray-300 {
+    color: #d1d5db;
+  }
+  
+  .text-gray-400 {
+    color: #9ca3af;
+  }
+}
+
+/* Print styles */
+@media print {
+  .no-print {
+    display: none !important;
+  }
+}
+
+/* Form field focus states */
+input:focus,
+textarea:focus,
+select:focus {
+  outline: none;
+  box-shadow: 0 0 0 3px var(--wc-focus);
+}
+
+/* Button hover effects with backdrop */
+.btn-hover-effect {
+  position: relative;
+  overflow: hidden;
+}
+
+.btn-hover-effect::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, transparent, rgba(216, 182, 106, 0.2), transparent);
+  transition: left 0.5s;
+}
+
+.btn-hover-effect:hover::before {
+  left: 100%;
+}
+
+
+html, body {
+  font-family: 'Epilogue', sans-serif;
+}
+
+
+@keyframes gradientMove {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
