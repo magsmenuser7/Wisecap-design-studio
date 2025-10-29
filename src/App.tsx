@@ -15,7 +15,7 @@ import WorkDetails from './pages/WorkDetails';
 
 function App() {
   return (
-    <Router>
+    <Router basename={import.meta.env.DEV ? "/Wisecap-design-studio" : "/"}>
       {/* basename={import.meta.env.DEV ? "/Wisecap-design-studio" : "/"} */}
       <div className="min-h-screen bg-white overflow-x-hidden">
         <Header />

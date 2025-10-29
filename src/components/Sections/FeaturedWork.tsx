@@ -50,7 +50,7 @@ const StaggeredWorkCard: React.FC<{ project: Project, index: number }> = ({ proj
 
       {/* Text Overlay Box (Mimics the white box from the image) */}
       <div 
-        className="absolute -bottom-10 left-1/2 -translate-x-1/3 -translate-y-1/2 w-[85%] bg-white p-4 py-3 backdrop-blur-sm 
+        className="absolute -bottom-10 left-1/2 -translate-x-1/3 -translate-y-1/2 w-[85%] bg-white p-4 py-4 backdrop-blur-sm 
                    shadow-xl text-center border-b-2 border-black border-opacity-0 
                    transition-all duration-300 group-hover:shadow-2xl hover:border-black hover:border-opacity-10"
       >
@@ -58,7 +58,7 @@ const StaggeredWorkCard: React.FC<{ project: Project, index: number }> = ({ proj
           {project.title.toUpperCase()}
         </h3>
         <p className="text-xs text-gray-600 mt-1 uppercase tracking-widest">
-          {project.industry || 'Design'}
+          {/* {project.industry || 'Design'} */}
         </p>
       </div>
     </a>
