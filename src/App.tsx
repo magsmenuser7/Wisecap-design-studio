@@ -13,11 +13,10 @@ import Insights from './pages/Insights';
 import Careers from './pages/Careers';
 import WorkDetails from './pages/WorkDetails';
 
-
 function App() {
   return (
-    <Router>
-      <div className="min-h-screen bg-white">
+    <Router basename={import.meta.env.DEV ? "/Wisecap-design-studio" : "/"}>
+      <div className="min-h-screen bg-white overflow-x-hidden">
         <Header />
         <main>
           <Routes>
@@ -29,7 +28,6 @@ function App() {
             <Route path="/contact" element={<Contact />} />
             <Route path="/careers" element={<Careers />} />
             <Route path="/works/:slug" element={<WorkDetails />} />
-           
           </Routes>
         </main>
         <Footer />
