@@ -115,13 +115,7 @@ const About = () => {
             transition={{ duration: 0.8 }}
             className="text-center mb-0"
           >
-            {/* <h2 className="text-4xl md:text-5xl font-serif font-semibold text-[#1E2A47] mb-4">
-            A Note from the Founder
-          </h2>
-          <p className="text-[#7B8163] text-lg max-w-3xl mx-auto leading-relaxed">
-            Thought, craftsmanship, and connection lie at the heart of
-            everything we design.
-          </p> */}
+           
           </motion.div>
 
           {/* Founder Card */}
@@ -169,8 +163,8 @@ const About = () => {
               >
                 <blockquote className="text-xl text-[#222427] leading-relaxed text-justify italic border-l-4 border-[#B85A3D] pl-6 mb-6">
                   “I started Wisecap because design should do more than look
-                  pretty — it should make a business clearer. We work with founders
-                  who care about craft, context, and long-term perception. We are
+                  pretty it should make a business clearer. We work with founders
+                  who care about craft, context, and long term perception. We are
                   selective, deliberate, and always personal.”
                 </blockquote>
 
@@ -178,7 +172,7 @@ const About = () => {
                   After 8 years at global agencies including Ogilvy, I realized
                   that the best design work comes from deep understanding and
                   genuine partnership. Wisecap was born from the belief that
-                  brands deserve more than cookie-cutter solutions.
+                  brands deserve more than cookie cutter solutions.
                 </p>
 
                 <p className="text-[#333] text-lg leading-relaxed">
@@ -215,10 +209,10 @@ const About = () => {
           {/* Right: Description */}
           <div className="text-[#222427] leading-relaxed text-lg space-y-6 text-justify">
             <p>
-              At Wisecap, design is more than visual appeal — it’s a dialogue between creativity and meaning. We craft identities that honor Indian heritage while meeting global standards, shaping stories that speak from the heart and resonate across cultures.
+              At Wisecap, design is more than visual appeal it’s a dialogue between creativity and meaning. We craft identities that honor Indian heritage while meeting global standards, shaping stories that speak from the heart and resonate across cultures.
             </p>
             <p>
-              Every detail we create is intentional — from concept to color, from sketch to screen. We partner with brands that value authenticity, ensuring each project reflects a shared passion and leaves a lasting emotional impact.
+              Every detail we create is intentional from concept to color, from sketch to screen. We partner with brands that value authenticity, ensuring each project reflects a shared passion and leaves a lasting emotional impact.
             </p>
           </div>
         </div>
@@ -246,6 +240,115 @@ const About = () => {
         </div>
       </section>
 
+{/* Meet the Studio Section */}
+<section className="bg-[#F9F8F6] py-28 relative overflow-hidden">
+  <div className="absolute inset-0 bg-[radial-gradient(circle_at_top_right,_rgba(255,255,255,0.4)_0%,_transparent_70%)]"></div>
+
+  <div className="relative max-w-7xl mx-auto px-6 lg:px-12">
+    {/* Heading */}
+    <div className="text-center mb-20">
+      <h2 className="text-4xl md:text-5xl font-semibold text-[#1E2A47] mb-4">
+        Meet the Studio
+      </h2>
+      <p className="text-lg text-gray-600 max-w-2xl mx-auto">
+        A team united by craft, curiosity, and care bringing thoughtful design to every brand we touch.
+      </p>
+    </div>
+
+    {/* Team Grid */}
+    <div className="grid grid-cols-1 md:grid-cols-2 gap-10">
+      {/* Member 1 */}
+      <div className="bg-white shadow-lg hover:shadow-2xl  p-10 transition-all duration-500 hover:-translate-y-2 border border-[#eee]">
+        <div className="flex flex-col items-center text-center">
+          <div className="relative">
+            {/* <img
+              src={founderPhoto}
+              alt="Sandeep N"
+              className="w-32 h-32 rounded-full object-cover border-4 border-[#F9F8F6] shadow-md mb-6"
+            /> */}
+            <div className="absolute inset-0  bg-gradient-to-tr from-[#B85A3D]/15 to-transparent"></div>
+          </div>
+
+          <h3 className="text-xl font-semibold text-[#1E2A47] mt-2">
+            Sandeep N
+          </h3>
+          <p className="text-[#B85A3D] font-medium mb-3">
+            Founder & Creative Director
+          </p>
+
+          <p className="text-gray-700 text-base leading-relaxed mb-6 max-w-md">
+            Former brand lead at Ogilvy. Believes design should make business clearer and connect emotion with clarity.
+          </p>
+
+          <div className="flex flex-wrap justify-center gap-2 mb-6">
+            {["Strategy", "Creative Direction", "Client Relations"].map((tag, i) => (
+              <span
+                key={i}
+                className="px-4 py-1 text-sm  bg-[#F9F8F6] border border-gray-200 text-gray-600"
+              >
+                {tag}
+              </span>
+            ))}
+          </div>
+
+          <a
+            href="https://www.linkedin.com/in/itsnsandeep"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex items-center gap-2 text-[#B85A3D] hover:text-[#8E3E25] font-medium transition-colors"
+          >
+            <Linkedin className="w-5 h-5" />
+            Connect on LinkedIn
+          </a>
+        </div>
+      </div>
+
+      {/* Member 2 */}
+      <div className="bg-white shadow-lg hover:shadow-2xl p-10 transition-all duration-500 hover:-translate-y-2 border border-[#eee]">
+        <div className="flex flex-col items-center text-center">
+          <div className="relative">
+            {/* <img
+              src="https://images.unsplash.com/photo-1603415526960-f7e0328d2e32?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=60"
+              alt="Vinod Mehta"
+              className="w-32 h-32 rounded-full object-cover border-4 border-[#F9F8F6] shadow-md mb-6"
+            /> */}
+            <div className="absolute inset-0 bg-gradient-to-tr from-[#B85A3D]/15 to-transparent"></div>
+          </div>
+
+          <h3 className="text-xl font-semibold text-[#1E2A47] mt-2">
+            Vinod
+          </h3>
+          <p className="text-[#B85A3D] font-medium mb-3">Design Lead</p>
+
+          <p className="text-gray-700 text-base leading-relaxed mb-6 max-w-md">
+            Craft-obsessed designer with 8 years in packaging and identity. Blends art and precision to tell brand stories that last.
+          </p>
+
+          <div className="flex flex-wrap justify-center gap-2 mb-6">
+            {["Visual Design", "Packaging", "Production"].map((tag, i) => (
+              <span
+                key={i}
+                className="px-4 py-1 text-sm bg-[#F9F8F6] border border-gray-200 text-gray-600"
+              >
+                {tag}
+              </span>
+            ))}
+          </div>
+
+          <a
+            href="#"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex items-center gap-2 text-[#B85A3D] hover:text-[#8E3E25] font-medium transition-colors"
+          >
+            <Linkedin className="w-5 h-5" />
+            Connect on LinkedIn
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
 
 
 
