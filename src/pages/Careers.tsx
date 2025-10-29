@@ -12,30 +12,24 @@ const Careers: React.FC = () => {
       {/* ============================== */}
       {/* HERO SECTION WITH OVERLAY */}
       {/* ============================== */}
-      <section
-        className="relative flex items-center justify-center min-h-[100vh] bg-cover bg-center overflow-hidden"
-        style={{ backgroundImage: `url(${bbbb})` }}
-      >
-        {/* Overlay */}
-        <div className="absolute inset-0 bg-gradient-to-b from-black/50 to-black/80"></div>
+<section
+  className="relative flex items-center justify-center min-h-[60vh] sm:min-h-[70vh] md:min-h-[80vh] lg:min-h-[100vh] bg-center bg-cover bg-no-repeat overflow-hidden px-4 sm:px-6 md:px-10"
+  style={{ backgroundImage: `url(${bbbb})` }}
+>
+  {/* Overlay */}
+  <div className="absolute inset-0 bg-black/70 backdrop-blur-[1px]"></div>
 
-        {/* Content */}
-        \
-        <div className="relative text-center text-white px-6 sm:px-8">
-          <h1 className="text-white text-2xl sm:text-3xl md:text-4xl lg:text-3xl font-semibold leading-snug md:leading-tight mb-6">
-            Join our creative team and grow with purpose. We’re shaping ideas that inspire and innovate.
-          </h1>
-          {/* <p className="max-w-2xl mx-auto text-lg sm:text-xl font-light mb-8">
-            Join our creative team and grow with purpose. We’re shaping ideas that inspire and innovate.
-          </p> */}
-          {/* <a
-            href="#roles"
-            className="bg-gradient-to-r from-wc-primary-teal to-wc-primary-deep text-white px-10 py-4 text-lg font-medium rounded-full shadow-lg hover:opacity-90 transition-all duration-300"
-          >
-            View Open Roles
-          </a> */}
-        </div>
-      </section>
+  {/* Text Content */}
+  <div className="relative z-10 text-center max-w-3xl mx-auto">
+    <h1
+      className="text-white font-semibold leading-snug md:leading-tight mb-4 sm:mb-6 
+                 text-xl xs:text-2xl sm:text-3xl md:text-4xl lg:text-3xl tracking-wide"
+    >
+      Join our creative team and grow with purpose.
+    </h1>
+  </div>
+</section>
+
 
       {/* ============================== */}
       {/* WHY WORK WITH US SECTION */}

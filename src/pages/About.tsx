@@ -42,14 +42,13 @@ const About = () => {
   return (
     <>
       {/* TOP HERO SECTION WITH BACKGROUND IMAGE */}
-      <section
+      {/* <section
         id="about"
         className="relative w-full h-[100vh] bg-cover bg-center bg-no-repeat py-32 md:py-40 flex items-center"
         style={{
           backgroundImage: `url(${aboutimage3})`,
         }}
       >
-        {/* Overlay */ }
           <div className="absolute inset-0 bg-black/50"></div>
  
         <div className="relative z-10 max-w-5xl mx-auto text-center px-4 sm:px-6 md:px-8">
@@ -59,7 +58,31 @@ const About = () => {
             and strategy from hand drawn beginnings to digital brilliance.
           </h1>
         </div>
-      </section>
+      </section> */}
+
+<section
+  id="about"
+  className="relative flex items-center justify-center min-h-[60vh] sm:min-h-[70vh] md:min-h-[80vh] lg:min-h-[100vh] bg-center bg-cover bg-no-repeat px-4 sm:px-6 md:px-10 text-center"
+  style={{
+    backgroundImage: `url(${aboutimage3})`,
+  }}
+>
+  {/* Overlay */}
+  <div className="absolute inset-0 bg-black/70 backdrop-blur-[1px]"></div>
+
+  {/* Content */}
+  <div className="relative z-10 max-w-4xl mx-auto">
+    <h1
+      className="text-white font-semibold leading-snug md:leading-tight mb-4 sm:mb-6 
+                 text-lg xs:text-xl sm:text-2xl md:text-3xl lg:text-3xl tracking-wide"
+    >
+      A quietly deliberate design studio crafting stories through sketches
+      and strategy from hand drawn beginnings to digital brilliance.
+    </h1>
+
+  
+  </div>
+</section>
 
 
       {/* WHO WE ARE SECTION */}

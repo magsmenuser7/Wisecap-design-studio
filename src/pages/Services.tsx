@@ -60,25 +60,30 @@ const Services: React.FC = () => {
       {/* ========================== */}
       {/* HERO SECTION WITH OVERLAY */}
       {/* ========================== */}
-      <section
-        className="relative flex items-center justify-center min-h-[100vh] bg-center bg-cover bg-no-repeat overflow-hidden"
-        style={{ backgroundImage: `url(${bannerservices})` }}
-      >
-        {/* Overlay */}
-        <div className="absolute inset-0 bg-black/70"></div>
+<section
+  className="relative flex items-center justify-center min-h-[60vh] sm:min-h-[70vh] md:min-h-[80vh] lg:min-h-[100vh] bg-center bg-cover bg-no-repeat overflow-hidden px-4 sm:px-6 md:px-10"
+  style={{ backgroundImage: `url(${bannerservices})` }}
+>
+  {/* Overlay */}
+  <div className="absolute inset-0 bg-black/70 backdrop-blur-[1px]"></div>
 
-        {/* Text */}
-        <div className="relative z-10 text-center px-4">
-          <h1
-            className="text-white text-2xl sm:text-3xl md:text-4xl lg:text-3xl font-semibold leading-snug md:leading-tight mb-4"
-          >
-            Designing strategies that build brands and lasting perceptions.
-          </h1>
-          {/* <p className="text-white/90 text-lg sm:text-xl max-w-2xl mx-auto">
-            Designing strategies that build brands and lasting perceptions.
-          </p> */}
-        </div>
-      </section>
+  {/* Text Content */}
+  <div className="relative z-10 text-center max-w-3xl mx-auto">
+    <h1
+      className="text-white font-semibold leading-snug md:leading-tight mb-4 sm:mb-6 
+                 text-xl xs:text-2xl sm:text-3xl md:text-4xl lg:text-3xl tracking-wide"
+    >
+      Designing strategies that build brands and lasting perceptions.
+    </h1>
+
+    {/* <p
+      className="text-gray-200 text-sm sm:text-base md:text-lg lg:text-xl leading-relaxed max-w-2xl mx-auto"
+    >
+      Every design we craft is guided by purpose — blending creativity, research, and strategy to build timeless brands that resonate deeply.
+    </p> */}
+  </div>
+</section>
+
 
       {/* ========================== */}
       {/* HEADER SECTION */}

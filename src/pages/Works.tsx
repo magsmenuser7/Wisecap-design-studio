@@ -62,39 +62,32 @@ const Works: React.FC = () => {
   return (
     <>
       {/* ===== Top Banner Section ===== */}
-      <section
-        className="relative w-full h-[100vh] bg-cover bg-center bg-no-repeat flex items-center justify-center"
-        style={{
-          backgroundImage: `url(${servicebrandkitsdesign})`,
-        }}
-      >
-        <div className="absolute inset-0 bg-black/50"></div>
+<section
+  className="relative flex items-center justify-center min-h-[60vh] sm:min-h-[70vh] md:min-h-[80vh] lg:min-h-[100vh] bg-center bg-cover bg-no-repeat px-4 sm:px-6 md:px-10 text-center"
+  style={{
+    backgroundImage: `url(${servicebrandkitsdesign})`,
+  }}
+>
+  {/* Overlay */}
+  <div className="absolute inset-0 bg-black/70 backdrop-blur-[1px]"></div>
 
-        <div className="relative z-10 text-center text-white px-6">
-          <h1 className="text-white text-2xl sm:text-3xl md:text-4xl lg:text-3xl font-semibold leading-snug md:leading-tight mb-3"> Creative designs that blend imagination and precision.</h1>
-          {/* <p className="text-lg md:text-xl">
-            Creative designs that blend imagination and precision.
-          </p> */}
-        </div>
-      </section>
+  {/* Text Content */}
+  <div className="relative z-10 max-w-3xl mx-auto">
+    <h1
+      className="text-white font-semibold leading-snug md:leading-tight mb-4 sm:mb-6 
+                 text-xl xs:text-2xl sm:text-3xl md:text-4xl lg:text-3xl tracking-wide"
+    >
+      Creative designs that blend imagination and precision.
+    </h1>
+  </div>
+</section>
+
 
       {/* ===== Portfolio Section ===== */}
       <section className="relative w-full bg-[#F6F4F1] py-32 md:py-40">
         <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           
-          {/* Header */}
-          {/* <section className="text-center mb-16 md:mb-24">
-            <AnimatedText
-              text="Our Creative Portfolio"
-              className="text-4xl md:text-7xl font-serif font-extrabold text-[#1E2A47] mb-6"
-            />
-            <AnimatedText
-              text="Showcasing powerful brand identities and visual excellence."
-              className="text-xl md:text-2xl text-[#7B8163] max-w-3xl mx-auto leading-relaxed"
-              delay={200}
-            />
-          </section> */}
-
+         
           {/* Projects Showcase */}
           <section className="flex flex-col gap-0 md:gap-0">
             {pairedProjects.map((pair, rowIndex) => (
