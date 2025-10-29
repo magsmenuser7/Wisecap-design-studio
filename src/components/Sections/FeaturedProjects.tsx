@@ -34,7 +34,7 @@ const FeaturedProjects: React.FC = () => {
             href="/works"
             className="inline-block bg-[#F6F4F1] text-[#1E2A47] border-2 border-[#1E2A47] px-8 py-4 rounded-full text-lg font-medium hover:bg-[#1E2A47] hover:text-white transition-all duration-180 hover:scale-105"
           >
-            See all work
+            See all works
           </a>
         </div>
       </div>

@@ -140,7 +140,7 @@ const FeaturedWork: React.FC = () => {
             href="/works"
             className="inline-block px-8 py-4 text-lg md:px-12 md:py-5 md:text-xl font-semibold bg-wc-primary-teal text-white rounded-full shadow-lg hover:bg-wc-primary-deep transition-colors duration-300 transform hover:scale-[1.03]"
           >
-            See All Work
+            See All Works
           </a>
         </div>
       </div>
