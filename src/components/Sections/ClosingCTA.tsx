@@ -72,8 +72,8 @@ const ClosingCTA: React.FC = () => {
 
         <AnimatedText
           text="Every line is an investment. Every detail is a decision."
-          className="text-xl text-gray-300 leading-relaxed mb-12 max-w-2xl mx-auto"
-          delay={400}
+          className="text-base leading-relaxed sm:text-lg md:text-xl md:font-light text-gray-300 leading-relaxed mb-12 max-w-2xl mx-auto "
+          delay={400}   
         />
 
         <div className="opacity-0 animate-fade-in-up" style={{ animationDelay: '600ms' }}>

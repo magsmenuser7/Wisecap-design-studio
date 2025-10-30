@@ -3,6 +3,7 @@ import { projects } from '../data/content';
 import AnimatedText from '../components/UI/AnimatedText';
 import aboutwisecap from '../assets/images/logo/works/works-image-2.jpeg';
 import servicebrandkitsdesign from "../assets/images/logo/servicces/services-banner.png";
+import harmonybanner from '../assets/images/logo/banners/harmony-banner.jpeg';
 
 // Define the Project type
 interface Project {
@@ -23,7 +24,7 @@ const DualImageCard: React.FC<{ project: Project }> = ({ project }) => {
     href='#'
       // href={`/works/`}
       // href={`/works/${project.slug}`}
-      className="group block w-full aspect-[4/3] overflow-hidden relative bg-gray-100 shadow-xl 
+      className="group block w-full aspect-[4/2] overflow-hidden relative bg-gray-100 shadow-xl 
                  hover:shadow-2xl transition-all duration-300"
     >
       {/* Project Image */}
@@ -42,7 +43,7 @@ const DualImageCard: React.FC<{ project: Project }> = ({ project }) => {
                    flex items-center transition-all duration-300 ease-in-out overflow-hidden"
       >
         <div className="px-4 py-2 text-white w-full">
-          <h3 className="text-lg md:text-xl font-bold line-clamp-1">{project.title}</h3>
+          <h3 className="text-lg md:text-xl font-Epilogue font-extralight line-clamp-1">{project.title}</h3>
           <p className="text-xs uppercase tracking-wider opacity-80 line-clamp-1">
             {/* {project.clientName} &bull; {project.year} */}
           </p>
@@ -65,17 +66,17 @@ const Works: React.FC = () => {
 <section
   className="relative flex items-center justify-center min-h-[60vh] sm:min-h-[70vh] md:min-h-[80vh] lg:min-h-[100vh] bg-center bg-cover bg-no-repeat px-4 sm:px-6 md:px-10 text-center"
   style={{
-    backgroundImage: `url(${servicebrandkitsdesign})`,
+    backgroundImage: `url(${harmonybanner})`,
   }}
 >
   {/* Overlay */}
-  <div className="absolute inset-0 bg-black/70 backdrop-blur-[1px]"></div>
+  <div className="absolute inset-0 bg-black/50"></div>
 
   {/* Text Content */}
-  <div className="relative z-10 max-w-3xl mx-auto">
+  <div className="relative z-10 max-w-4xl mx-auto">
     <h1
-      className="text-white font-semibold leading-snug md:leading-tight mb-4 sm:mb-6 
-                 text-xl xs:text-2xl sm:text-3xl md:text-4xl lg:text-3xl tracking-wide"
+      className="text-white leading-snug md:leading-tight mb-4 sm:mb-6 
+                 text-lg xs:text-xl sm:text-4xl md:text-5xl lg:text-5xl tracking-wide font-Epilogue font-extralight"
     >
       Creative designs that blend imagination and precision.
     </h1>
@@ -120,12 +121,12 @@ const Works: React.FC = () => {
 
           {/* CTA */}
           <section className="text-center mt-24 pt-12 border-t border-gray-300">
-            <p className="text-[#7B8163] mb-6 text-xl md:text-2xl">
+            <p className="text-[#7B8163] mb-6 text-xl md:text-2xl font-Epilogue font-extralight">
               Ready to elevate your brand's visual identity?
             </p>
             <a
               href="/contact"
-              className="inline-block px-8 py-4 text-lg md:px-12 md:py-5 md:text-xl font-semibold bg-wc-primary-teal text-white rounded-full shadow-lg hover:bg-wc-primary-deep transition-colors duration-300 transform hover:scale-[1.03]"
+              className="inline-block px-8 py-4 text-lg md:px-12 md:py-5 md:text-xl font-Epilogue font-extralight bg-wc-primary-teal text-white rounded-full shadow-lg hover:bg-wc-primary-deep transition-colors duration-300 transform hover:scale-[1.03]"
             >
               Start a Project
             </a>

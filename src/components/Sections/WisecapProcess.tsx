@@ -118,7 +118,7 @@ const WisecapProcess: React.FC = () => {
           />
           <AnimatedText
             text="Craft Flow — From Sketch to System"
-            className="text-xl text-wc-warm-gold uppercase tracking-[0.2em] md:font-extrathin"
+            className="text-xl text-wc-warm-gold tracking-[0.1em] md:font-extrathin"
             delay={200}
           />
         </div>
@@ -186,15 +186,7 @@ const WisecapProcess: React.FC = () => {
           ))}
         </div>
 
-        {/* <div className="text-center mt-16">
-          <div className="bg-white p-12 rounded-2xl shadow-soft max-w-3xl mx-auto">
-            <AnimatedText
-              text="We sketch, refine, and build until perception is made real."
-              className="text-2xl font-serif text-wc-primary-deep leading-relaxed"
-              delay={1200}
-            />
-          </div>
-        </div> */}
+       
       </div>
     </section>
   );

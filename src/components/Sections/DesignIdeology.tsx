@@ -66,13 +66,13 @@ const DesignIdeology: React.FC = () => {
             <div className="space-y-6">
               <AnimatedText
                 text="A designer’s desk filled with raw sketches, pencils, and brand drafts where every great idea begins."
-                className="text-base sm:text-lg md:text-xl font-serif text-wc-charcoal leading-relaxed md:font-light"
+                className="text-base sm:text-lg md:text-xl text-wc-charcoal leading-relaxed md:font-light"
                 delay={400}
               />
 
               <AnimatedText
                 text="A creative workspace blending analog sketches with digital tools symbolizing the bridge between imagination and execution."
-                className="text-base sm:text-lg md:text-xl font-serif text-wc-charcoal leading-relaxed md:font-light"
+                className="text-base sm:text-lg md:text-xl text-wc-charcoal leading-relaxed md:font-light"
                 delay={600}
               />
             </div>

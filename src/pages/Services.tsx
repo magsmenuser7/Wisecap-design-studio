@@ -65,13 +65,13 @@ const Services: React.FC = () => {
   style={{ backgroundImage: `url(${bannerservices})` }}
 >
   {/* Overlay */}
-  <div className="absolute inset-0 bg-black/70 backdrop-blur-[1px]"></div>
+  <div className="absolute inset-0 bg-black/70"></div>
 
   {/* Text Content */}
-  <div className="relative z-10 text-center max-w-3xl mx-auto">
+  <div className="relative z-10 text-center max-w-4xl mx-auto">
     <h1
-      className="text-white font-semibold leading-snug md:leading-tight mb-4 sm:mb-6 
-                 text-xl xs:text-2xl sm:text-3xl md:text-4xl lg:text-3xl tracking-wide"
+      className="text-white leading-snug md:leading-tight mb-4 sm:mb-6 
+                 text-lg xs:text-xl sm:text-4xl md:text-5xl lg:text-5xl tracking-wide font-Epilogue font-extralight"
     >
       Designing strategies that build brands and lasting perceptions.
     </h1>
@@ -131,11 +131,11 @@ const Services: React.FC = () => {
                 style={{ backgroundColor: serviceBlockColor }}
               >
                 <div className='my-auto'>
-                  <h2 className="text-3xl font-serif font-bold text-white mb-6">
+                  <h2 className="text-3xl font-Epilogue font-extralight text-white mb-6">
                     {service.title}
                   </h2>
-                  <div className="w-16 border-t border-gray-400 mb-6"></div>
-                  <p className="text-white text-opacity-80 leading-relaxed">
+                  <div className="w-16 border-t border-gray-400 mb-6"></div> 
+                  <p className="text-white text-opacity-80  font-Epilogue font-extralight text-xl"> {/* leading-relaxed */}
                     {service.shortDescription}
                   </p>
                 </div>

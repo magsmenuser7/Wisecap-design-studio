@@ -12,7 +12,7 @@ const FeaturedProjects: React.FC = () => {
         <div className="text-center mb-16">
           <AnimatedText
             text="Work that speaks"
-            className="text-4xl md:text-5xl font-serif font-bold text-[#1E2A47] mb-6"
+            className="text-4xl md:text-5xl font-Epilogue font-extralight text-[#1E2A47] mb-6"
           />
           <AnimatedText
             text="Founder-led craft. Narrative-first thinking. Value-based outcomes."

@@ -68,16 +68,19 @@ const About = () => {
   }}
 >
   {/* Overlay */}
-  <div className="absolute inset-0 bg-black/70 backdrop-blur-[1px]"></div>
+  <div className="absolute inset-0 bg-black/60"></div>
 
   {/* Content */}
-  <div className="relative z-10 max-w-4xl mx-auto">
+  <div className="relative z-10 max-w-5xl mx-auto">
     <h1
-      className="text-white font-semibold leading-snug md:leading-tight mb-4 sm:mb-6 
-                 text-lg xs:text-xl sm:text-2xl md:text-3xl lg:text-3xl tracking-wide"
+      className="text-white leading-snug md:leading-tight mb-4 sm:mb-6 
+                 text-lg xs:text-xl sm:text-4xl md:text-5xl lg:text-5xl tracking-wide font-Epilogue font-extralight"
+
+
+    
+             
     >
-      A quietly deliberate design studio crafting stories through sketches
-      and strategy from hand drawn beginnings to digital brilliance.
+      A quietly deliberate design studio crafting stories through sketches and strategy
     </h1>
 
   
@@ -93,13 +96,14 @@ const About = () => {
             <p className="uppercase tracking-widest text-sm text-gray-500 mb-4">
               Who We Are
             </p>
-            <h2 className="text-4xl md:text-5xl  md:font-extrathin text-[#1E2A47] leading-tight">
+            <h2 className="text-black leading-snug md:leading-tight mb-4 sm:mb-6 
+                 text-lg xs:text-xl sm:text-3xl md:text-5xl lg:text-5xl tracking-wide font-Epilogue font-extralight">
               Where Creativity Meets  <br /> Craftsmanship, <br /> Rooted in Indian Heritage
             </h2>
           </div>
 
-          {/* Right: Description */}
-          <div className="text-[#222427] leading-relaxed text-lg space-y-6 text-justify">
+          {/* Right: Description */} 
+          <div className="text-[#222427]  text-xl space-y-4 text-justify md:font-light lg:font-light">
             <p>
               At Wisecap, creativity meets craftsmanship. Born from a passion for authentic design and rooted in Indian heritage, our studio blends local soul with global standards. For us, design isn’t just about aesthetics, it’s about connection. It’s about evoking emotion, sparking thought, and creating lasting impressions.
             </p>
@@ -184,23 +188,23 @@ const About = () => {
                 transition={{ duration: 0.8, delay: 0.2 }}
                 className="lg:col-span-2"
               >
-                <blockquote className="text-xl text-[#222427] leading-relaxed text-justify italic border-l-4 border-[#B85A3D] pl-6 mb-6">
+                <blockquote className="text-xl text-[#222427] text-justify border-l-4 border-[#B85A3D] pl-6 mb-6 font-light">
                   “I started Wisecap because design should do more than look
                   pretty it should make a business clearer. We work with founders
                   who care about craft, context, and long term perception. We are
                   selective, deliberate, and always personal.”
                 </blockquote>
 
-                <p className="text-[#333] text-lg leading-relaxed mb-4 text-justify">
+                <p className="text-[#333] text-xl mb-4 text-justify font-light">
                   After 8 years at global agencies including Ogilvy, I realized
                   that the best design work comes from deep understanding and
                   genuine partnership. Wisecap was born from the belief that
                   brands deserve more than cookie cutter solutions.
                 </p>
 
-                <p className="text-[#333] text-lg leading-relaxed">
+                <p className="text-[#333] text-xl font-light text-justify">
                   We combine Indian craft heritage with international design
-                  thinking. Our clients become partners — their success becomes
+                  thinking. Our clients become partners their success becomes
                   our legacy.
                 </p>
 
@@ -224,13 +228,14 @@ const About = () => {
             <p className="uppercase tracking-widest text-sm text-gray-500 mb-4">
               What We Do
             </p>
-            <h2 className="text-4xl md:text-5xl font-serif md:font-extrathin text-[#1E2A47] leading-tight">
+            <h2 className="text-black leading-snug md:leading-tight mb-4 sm:mb-6 
+                 text-lg xs:text-xl sm:text-3xl md:text-5xl lg:text-5xl tracking-wide font-Epilogue font-extralight">
               Designing Timeless Identities That Blend Culture,<br /> Emotion, and Craft
             </h2>
           </div>
 
           {/* Right: Description */}
-          <div className="text-[#222427] leading-relaxed text-lg space-y-6 text-justify">
+          <div className="text-[#222427] text-xl space-y-6 text-justify md:font-light lg:font-light">
             <p>
               At Wisecap, design is more than visual appeal it’s a dialogue between creativity and meaning. We craft identities that honor Indian heritage while meeting global standards, shaping stories that speak from the heart and resonate across cultures.
             </p>
@@ -270,10 +275,10 @@ const About = () => {
   <div className="relative max-w-7xl mx-auto px-6 lg:px-12">
     {/* Heading */}
     <div className="text-center mb-20">
-      <h2 className="text-4xl md:text-5xl font-semibold text-[#1E2A47] mb-4">
+      <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-wc-primary-deep mb-4 md:font-extralight mb-8">
         Meet the Studio
       </h2>
-      <p className="text-lg text-gray-600 max-w-2xl mx-auto">
+      <p className="text-xl font-light text-gray-600 max-w-2xl mx-auto">
         A team united by craft, curiosity, and care bringing thoughtful design to every brand we touch.
       </p>
     </div>

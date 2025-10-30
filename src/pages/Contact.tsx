@@ -16,7 +16,7 @@ const Contact: React.FC = () => {
   style={{ backgroundImage: `url(${SNG01})` }}
 >
   {/* Overlay */}
-  <div className="absolute inset-0 bg-black/60 backdrop-blur-[1px]"></div>
+  <div className="absolute inset-0 bg-black/70"></div>
 
   {/* Text Content */}
   <div className="relative z-10 max-w-3xl mx-auto">

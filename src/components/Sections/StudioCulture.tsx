@@ -23,13 +23,13 @@ const StudioCulture: React.FC = () => {
             <div className="text-left space-y-8">
               <AnimatedText
                 text="We are a boutique studio. Small, selective, founder-led."
-                className="text-xl font-serif text-wc-charcoal leading-relaxed"
+                className="text-base sm:text-lg md:text-xl text-wc-charcoal leading-relaxed md:font-light"
                 delay={400}
               />
               
               <AnimatedText
                 text="Every project is personal. Every detail is crafted."
-                className="text-xl font-serif text-wc-charcoal leading-relaxed"
+                className="text-base sm:text-lg md:text-xl text-wc-charcoal leading-relaxed md:font-light"
                 delay={600}
               />
 

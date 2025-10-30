@@ -68,7 +68,7 @@ const DesignPartnerships: React.FC = () => {
                 </Icon>
                 <div>
                   <h4 className="font-bold text-lg md:text-xl text-wc-primary-deep mb-1">Consistency</h4>
-                  <p className="text-wc-charcoal text-sm md:text-base leading-relaxed">
+                  <p className="text-base sm:text-lg md:text-xl text-wc-charcoal leading-relaxed md:font-light">
                     A dedicated team ensures every new asset maintains your brand standards across all touchpoints, eliminating visual drift.
                   </p>
                 </div>
@@ -81,7 +81,7 @@ const DesignPartnerships: React.FC = () => {
                 </Icon>
                 <div>
                   <h4 className="font-bold text-lg md:text-xl text-wc-primary-deep mb-1">Priority Access</h4>
-                  <p className="text-wc-charcoal text-sm md:text-base leading-relaxed">
+                  <p className="text-base sm:text-lg md:text-xl text-wc-charcoal leading-relaxed md:font-light">
                     You skip the queue with a dedicated monthly allocation, guaranteeing faster turnaround and predictable delivery schedules.
                   </p>
                 </div>
@@ -94,7 +94,7 @@ const DesignPartnerships: React.FC = () => {
                 </Icon>
                 <div>
                   <h4 className="font-bold text-lg md:text-xl text-wc-primary-deep mb-1">Strategic Growth</h4>
-                  <p className="text-wc-charcoal text-sm md:text-base leading-relaxed">
+                  <p className="text-base sm:text-lg md:text-xl text-wc-charcoal leading-relaxed md:font-light">
                     Benefit from regular, strategic reviews to ensure your design output is always evolving with and supporting your core business goals.
                   </p>
                 </div>

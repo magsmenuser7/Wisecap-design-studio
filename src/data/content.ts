@@ -24,6 +24,8 @@ import featuredimage21 from '../assets/images/logo/works/34.png'
 import featuredimage22 from '../assets/images/logo/works/35.png'
 import featuredimage23 from '../assets/images/logo/works/LUN-9.jpg'
 import featuredimage24 from '../assets/images/logo/works/3.jpg'
+import featuredimage25 from '../assets/images/logo/banners/harmony-banner.jpeg'
+
 
 
 
@@ -738,6 +740,37 @@ export const projects: Project[] = [
     seoDescription: 'Authentic packaging design that increased trust scores by 45% for wellness brand.',
     ogImage: 'https://images.pexels.com/photos/7979267/pexels-photo-7979267.jpeg?auto=compress&cs=tinysrgb&w=1200'
   },
+              {
+    id: '23',
+    title: 'Harmony',
+    slug: 'Harmoney',
+    heroImage: featuredimage25,
+    clientName: 'Harmoney',
+    industry: 'Health & Wellness',
+    year: 2024,
+    services: [],
+    shortBlurb: 'Modern Ayurvedic wellness products with authentic, trust-building packaging.',
+    problemStatement: 'Pure Elements struggled to convey authenticity in a crowded wellness market filled with flashy, superficial branding.',
+    storyboard: [
+      {
+        id: '1',
+        image: 'https://images.pexels.com/photos/7979267/pexels-photo-7979267.jpeg?auto=compress&cs=tinysrgb&w=800',
+        caption: 'Research: Ancient wisdom meets modern science',
+        order: 1
+      }
+    ],
+    solution: 'Clean, minimal packaging that lets the product quality speak. Earthy tones and botanical illustrations build immediate trust.',
+    gallery: [
+      'https://images.pexels.com/photos/7979267/pexels-photo-7979267.jpeg?auto=compress&cs=tinysrgb&w=1200'
+    ],
+    outcomes: [
+      { metric: 'Trust Score', value: '+45%', description: 'in consumer research' },
+      { metric: 'Retail Adoption', value: '2x', description: 'faster placement' }
+    ],
+    seoTitle: 'Ayurvedic Wellness Packaging Design - Wisecap Design Studio',
+    seoDescription: 'Authentic packaging design that increased trust scores by 45% for wellness brand.',
+    ogImage: 'https://images.pexels.com/photos/7979267/pexels-photo-7979267.jpeg?auto=compress&cs=tinysrgb&w=1200'
+  },
    
    
 ];
@@ -748,8 +781,8 @@ export const services: Service[] = [
     id: '1',
     name: 'Logo Design',
     slug: 'signature-logos',
-    tagline: 'Your logo is the face of your brand—make it count. We design timeless, distinctive logos that stand out. Crafted to reflect your unique identity and vision. Built for startups and established brands alike.',
-    shortDescription: 'Your logo is the face of your brand—make it count. We design timeless, distinctive logos that stand out. Crafted to reflect your unique identity and vision. Built for startups and established brands alike.',
+    tagline: 'Your logo is the face of your brand make it count. We design timeless, distinctive logos that stand out. Crafted to reflect your unique identity and vision. Built for startups and established brands alike.',
+    shortDescription: 'Your logo is the face of your brand make it count. We design timeless, distinctive logos that stand out. Crafted to reflect your unique identity and vision. Built for startups and established brands alike.',
     longDescription: 'Crafted to reflect your unique identity and vision. Built for startups and established brands alike.',
     deliverables: [
       'Strategic logo concepts',
@@ -767,7 +800,7 @@ export const services: Service[] = [
     name: 'Brand Kits Design',
     slug: 'brand-kits-design',
     tagline: 'A brand without consistency loses trust.',
-    shortDescription: 'Consistency builds trust—your brand should reflect that. Our Brand Kits include logos, colors, fonts, and assets. We ensure a cohesive look across every platform. Build a visual identity that connects with your audience.',
+    shortDescription: 'Consistency builds trust your brand should reflect that. Our Brand Kits include logos, colors, fonts, and assets. We ensure a cohesive look across every platform. Build a visual identity that connects with your audience.',
     longDescription: 'A brand without consistency loses trust. We build complete visual identities with colors, typography, and systems that make your brand instantly recognizable. This is not design for today, it is equity for tomorrow.',
     deliverables: [
       'Visual identity system',
@@ -821,7 +854,7 @@ export const services: Service[] = [
     name: 'Flyer & Poster Designs',
     slug: 'flyer-poster-designs',
     tagline: 'Information deserves more than pages.',
-    shortDescription: "Catch eyes and make an impact with designs that speak for you. Whether it's a flyer for an event, a poster for a campaign, or a promotion that needs attention — we create bold, beautiful visuals that communicate.",
+    shortDescription: "Catch eyes and make an impact with designs that speak for you. Whether it's a flyer for an event, a poster for a campaign, or a promotion that needs attention we create bold, beautiful visuals that communicate.",
     longDescription: 'Information deserves more than pages. Our brochures and catalogs are designed as experiences, guiding attention and building trust. Each page is a chapter in your brand\'s story, carefully crafted to influence perception.',
     deliverables: [
       'Editorial layout design',

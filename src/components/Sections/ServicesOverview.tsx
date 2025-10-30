@@ -94,7 +94,7 @@ const ServicesOverview = () => {
               <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-wc-primary-deep mb-4 md:font-extralight mb-4 leading-tight mb-4">
                 {service.title}
               </h2>
-              <p className="text-sm sm:text-sm md:text-lg  text-wc-charcoal leading-relaxed max-w-xl mx-auto md:mx-0">
+              <p className="text-base sm:text-lg md:text-xl text-wc-charcoal leading-relaxed md:font-light">
                 {service.description}
               </p>
             </div>

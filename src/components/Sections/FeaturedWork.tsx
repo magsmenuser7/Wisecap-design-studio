@@ -81,8 +81,8 @@ const FeaturedWork: React.FC = () => {
         {/* --- Global Header --- */}
         <div className="text-center mb-20">
           <AnimatedText
-            text="Latest Works" 
-            className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-serif font-bold text-wc-primary-deep mb-4 md:font-extralight mb-8"
+            text="Latest Works"
+            className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-wc-primary-deep mb-4 md:font-extralight mb-8"
           />
           <AnimatedText
             text="Stories told through design. Outcomes measured in perception."
