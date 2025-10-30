@@ -18,10 +18,18 @@ const Hero: React.FC = () => {
           
           {/* Primary Headline */}
 
-          <h1
+          {/* <h1
   className="text-transparent bg-clip-text
              bg-gradient-to-r from-[#ddbf74] via-[#00FFF6] to-[#5D42FF]
              text-7xl sm:text-2xl md:text-9xl leading-none tracking-tight mb-5 font-Epilogue font-extralight"
+> */}
+
+<h1
+  className="text-transparent bg-clip-text
+             bg-gradient-to-r from-[#ddbf74] via-[#00FFF6] to-[#5D42FF]
+             font-Epilogue font-extralight text-center md:text-left
+             leading-tight tracking-tight mb-5
+             text-[10vw] sm:text-6xl md:text-7xl lg:text-8xl xl:text-8xl 2xl:text-8xl"
 >
   Every Brand Deserves
   <br />
