@@ -1,20 +1,28 @@
+
+
 import React from 'react';
 
 const Hero: React.FC = () => {
   return (
     <section
       className="relative min-h-screen flex flex-col justify-between overflow-hidden 
-                 bg-gradient-to-r from-[#333333] via-[#4A4A4A] to-white/0 px-6 sm:px-8 lg:px-6"
+                 bg-gradient-to-r from-[#333333] via-[#4A4A4A] to-white/0"
     >
       {/* Main Content */}
-      <div className="relative max-w-7xl  flex-grow flex items-center pt-24 pb-20">
-        <div className="w-full text-center md:text-left">
+      <div
+        className="relative max-w-7xl w-full flex-grow flex items-center
+                   pt-24 pb-20 mx-auto"
+      >
+        {/* ✅ Exact same horizontal padding as your navbar/logo container */}
+        <div className="w-full text-left px-6 sm:px-8 md:px-6 lg:px-6 xl:px-6 2xl:px-6">
+          
           {/* Primary Headline */}
           <h1
             className="text-transparent bg-clip-text
                        bg-gradient-to-r from-[#ddbf74] via-[#00FFF6] to-[#5D42FF]
                        font-Epilogue font-extralight leading-[1.05] tracking-tight mb-6
-                       text-[2.5rem] sm:text-[3rem] md:text-[4.5rem] lg:text-[5.5rem] xl:text-[7rem] 2xl:text-[7rem]"
+                       text-[2.5rem] sm:text-[3rem] md:text-[8rem] lg:text-[8rem]
+                       xl:text-[8rem] 2xl:text-[8rem]"
           >
             Every Brand Deserves
             <br />
@@ -22,8 +30,10 @@ const Hero: React.FC = () => {
           </h1>
 
           {/* Subtitle */}
-          <p className="text-white font-extralight mt-4 
-                         text-lg sm:text-xl md:text-2xl lg:text-3xl xl:text-3xl 2xl:text-3xl">
+          <p
+            className="text-white font-extralight mt-4
+                       text-lg sm:text-xl md:text-2xl lg:text-3xl xl:text-3xl 2xl:text-3xl"
+          >
             That Speaks Louder than Words
           </p>
         </div>
@@ -50,6 +60,7 @@ const Hero: React.FC = () => {
 };
 
 export default Hero;
+
 
 
 
