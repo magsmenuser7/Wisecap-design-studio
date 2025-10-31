@@ -170,7 +170,7 @@ const Services: React.FC = () => {
       {/* CTA SECTION */}
       {/* ========================== */}
       <section className="bg-[#1E2A47] rounded-none p-12 text-center">
-        <h2 className="text-3xl font-serif font-bold text-white mb-6">
+        <h2 className="text-3xl font-serif font-extrathin text-white mb-6">
           Ready to get started?
         </h2>
         <p className="text-xl text-gray-300 mb-8 max-w-2xl mx-auto">

@@ -9,7 +9,7 @@ const StudioCulture: React.FC = () => {
         <div className="max-w-4xl mx-auto text-center">
           <AnimatedText
             text="Studio Culture"
-            className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-serif font-bold text-wc-primary-deep mb-4 md:font-extralight mb-8"
+            className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-extrathin text-wc-primary-deep mb-4 md:font-extralight mb-8"
           />
           
           <AnimatedText

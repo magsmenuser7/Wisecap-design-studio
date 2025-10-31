@@ -61,12 +61,12 @@ const ClosingCTA: React.FC = () => {
 
         <AnimatedText
           text="We don't just design."
-          className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl  font-bold text-white mb-4 md:font-extralight mb-4"
+          className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl  font-extrathin text-white mb-4 md:font-extralight mb-4"
         />
         
         <AnimatedText
           text="We build perception."
-          className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl  font-bold text-white mb-4 md:font-extralight mb-12"
+          className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl  font-extrathin text-white mb-4 md:font-extralight mb-12"
           delay={200}
         />
 

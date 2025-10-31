@@ -54,7 +54,7 @@ const StaggeredWorkCard: React.FC<{ project: Project, index: number }> = ({ proj
                    shadow-xl text-center border-b-2 border-black border-opacity-0 
                    transition-all duration-300 group-hover:shadow-2xl hover:border-black hover:border-opacity-10"
       >
-        <h3 className="text-xl  font-bold text-black leading-none uppercase">
+        <h3 className="text-xl  font-extrathin text-black leading-none uppercase">
           {project.title.toUpperCase()}
         </h3>
         <p className="text-xs text-gray-600 mt-1 uppercase tracking-widest">
@@ -82,7 +82,7 @@ const FeaturedWork: React.FC = () => {
         <div className="text-center mb-20">
           <AnimatedText
             text="Latest Works"
-            className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-wc-primary-deep mb-4 md:font-extralight mb-8"
+            className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-extrathin text-wc-primary-deep mb-4 md:font-extralight mb-8"
           />
           <AnimatedText
             text="Stories told through design. Outcomes measured in perception."

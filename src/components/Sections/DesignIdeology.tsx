@@ -29,20 +29,20 @@ const DesignIdeology: React.FC = () => {
             <div className="mb-8">
               <AnimatedText
                 text="Crafting Design"
-                className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-serif font-bold text-wc-primary-deep mb-4 md:font-extralight"
+                className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-extrathin text-wc-primary-deep mb-4 md:font-extralight"
               />
             </div>
 
             <div className="space-y-6">
               <AnimatedText
                 text="A designer’s desk filled with raw sketches, pencils, and brand drafts where every great idea begins."
-                className="text-base sm:text-lg md:text-xl font-serif text-wc-charcoal leading-relaxed md:font-light"
+                className="text-base sm:text-lg md:text-xl text-wc-charcoal leading-relaxed md:font-light"
                 delay={400}
               />
 
               <AnimatedText
                 text="A creative workspace blending analog sketches with digital tools symbolizing the bridge between imagination and execution."
-                className="text-base sm:text-lg md:text-xl font-serif text-wc-charcoal leading-relaxed md:font-light"
+                className="text-base sm:text-lg md:text-xl text-wc-charcoal leading-relaxed md:font-light"
                 delay={600}
               />
             </div>
@@ -53,33 +53,34 @@ const DesignIdeology: React.FC = () => {
       {/* Second Section */}
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mt-16 md:mt-28">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
-          
+
           {/* LEFT COLUMN — CONTENT */}
-          <div className="text-center md:text-left">
+          <div className="text-center md:text-left order-2 md:order-1">
             <div className="mb-8">
               <AnimatedText
                 text="Digital Design"
-                className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-serif font-bold text-wc-primary-deep mb-4 md:font-extralight"
+                className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-extrathin text-wc-primary-deep mb-4 md:font-extralight"
               />
             </div>
 
             <div className="space-y-6">
               <AnimatedText
-                text="A designer’s desk filled with raw sketches, pencils, and brand drafts where every great idea begins."
-                className="text-base sm:text-lg md:text-xl text-wc-charcoal leading-relaxed md:font-light"
+                text="Where pixels meet purpose transforming ideas into visually striking, user centered digital experiences that inspire connection."
+                className="text-base sm:text-lg md:text-xl font-serif text-wc-charcoal leading-relaxed md:font-light"
                 delay={400}
               />
 
               <AnimatedText
-                text="A creative workspace blending analog sketches with digital tools symbolizing the bridge between imagination and execution."
-                className="text-base sm:text-lg md:text-xl text-wc-charcoal leading-relaxed md:font-light"
+                text="From intuitive interfaces to immersive visuals, every digital design we craft blends creativity, strategy, and technology in perfect harmony."
+                className="text-base sm:text-lg md:text-xl font-serif text-wc-charcoal leading-relaxed md:font-light"
                 delay={600}
               />
             </div>
           </div>
 
+
           {/* RIGHT COLUMN — IMAGE */}
-          <div className="flex justify-center md:justify-end">
+          <div className="flex justify-center md:justify-end order-1 md:order-2">
             <img
               src={aboutimagetwo}
               alt="Design process illustration"

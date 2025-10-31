@@ -117,7 +117,7 @@ const WisecapProcess: React.FC = () => {
             className="text-5xl md:text-6xl  text-wc-primary-deep mb-8 md:font-extrathin"
           />
           <AnimatedText
-            text="Craft Flow — From Sketch to System"
+            text="Craft Flow From Sketch to System"
             className="text-xl text-wc-warm-gold tracking-[0.1em] md:font-extrathin"
             delay={200}
           />

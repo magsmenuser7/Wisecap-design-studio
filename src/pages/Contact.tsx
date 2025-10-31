@@ -45,7 +45,7 @@ const Contact: React.FC = () => {
             {/* CONTACT FORM SECTION */}
             {/* ========================== */}
             <section>
-              <h2 className="text-2xl font-serif font-semibold text-[#1E2A47] mb-6">
+              <h2 className="text-3xl font-serif font-extrathin text-[#1E2A47] mb-6">
                 Start a conversation
               </h2>
 
@@ -57,7 +57,7 @@ const Contact: React.FC = () => {
             {/* CONTACT INFORMATION SECTION */}
             {/* ========================== */}
             <section>
-              <h2 className="text-2xl font-serif font-semibold text-[#1E2A47] mb-6">
+              <h2 className="text-3xl font-extrathin text-[#1E2A47] mb-6">
                 Get in touch
               </h2>
 

@@ -97,13 +97,13 @@ const About = () => {
               Who We Are
             </p>
             <h2 className="text-black leading-snug md:leading-tight mb-4 sm:mb-6 
-                 text-lg xs:text-xl sm:text-3xl md:text-5xl lg:text-5xl tracking-wide font-Epilogue font-extralight">
+                 text-4xl xs:text-xl sm:text-3xl md:text-5xl lg:text-5xl tracking-wide font-Epilogue font-extralight">
               Where Creativity Meets  <br /> Craftsmanship, <br /> Rooted in Indian Heritage
             </h2>
           </div>
 
           {/* Right: Description */} 
-          <div className="text-[#222427]  text-xl space-y-4 text-justify md:font-light lg:font-light">
+          <div className="text-[#222427] text-xl space-y-4 text-justify md:font-light lg:font-light font-extrathin">
             <p>
               At Wisecap, creativity meets craftsmanship. Born from a passion for authentic design and rooted in Indian heritage, our studio blends local soul with global standards. For us, design isn’t just about aesthetics, it’s about connection. It’s about evoking emotion, sparking thought, and creating lasting impressions.
             </p>
@@ -146,7 +146,7 @@ const About = () => {
           </motion.div>
 
           {/* Founder Card */}
-          <div className="bg-white/70 backdrop-blur-md border border-[#e5e3df] rounded-3xl p-10 md:p-14 shadow-lg hover:shadow-xl transition-all duration-500">
+          <div className="bg-white/70 backdrop-blur-md border border-[#e5e3df] p-10 md:p-14 shadow-lg hover:shadow-xl transition-all duration-500">
             <div className="grid grid-cols-1 lg:grid-cols-3 gap-10 items-start">
               {/* Profile Section */}
               <motion.div
@@ -157,20 +157,20 @@ const About = () => {
               >
                 <div className="flex flex-col items-center lg:items-start">
                   <div className="relative w-40 h-40 mb-6">
-                    <img
+                    {/* <img
                       src={founderPhoto}
                       alt="Sandeep N"
                       className="w-full h-full rounded-full object-cover border-4 border-[#F6F4F1] shadow-lg"
-                    />
+                    /> */}
                     <div className="absolute inset-0 rounded-full bg-gradient-to-tr from-[#B85A3D]/20 to-transparent"></div>
                   </div>
 
                   <h3 className="text-2xl font-semibold text-[#1E2A47]">
-                    Sandeep N
+                    Vinod
                   </h3>
-                  <p className="text-[#7B8163] mb-3">Founder & Creative Director</p>
+                  <p className="text-[#7B8163] mb-3">Creative Director & Design Lead</p>
                   <a
-                    href="https://www.linkedin.com/in/itsnsandeep?trk=public-profile-badge-profile-badge-view-profile-cta&originalSubdomain=in"
+                    href="#"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="inline-flex items-center gap-2 text-[#B85A3D] hover:text-[#8E3E25] transition-colors duration-200"
@@ -188,21 +188,21 @@ const About = () => {
                 transition={{ duration: 0.8, delay: 0.2 }}
                 className="lg:col-span-2"
               >
-                <blockquote className="text-xl text-[#222427] text-justify border-l-4 border-[#B85A3D] pl-6 mb-6 font-light">
+                <blockquote className="text-xl text-[#222427] border-l-4 border-[#B85A3D] pl-6 mb-6 font-light">
                   “I started Wisecap because design should do more than look
                   pretty it should make a business clearer. We work with founders
                   who care about craft, context, and long term perception. We are
                   selective, deliberate, and always personal.”
                 </blockquote>
 
-                <p className="text-[#333] text-xl mb-4 text-justify font-light">
-                  After 8 years at global agencies including Ogilvy, I realized
+                <p className="text-[#333] text-xl mb-4 font-light">
+                  After 2 years at global agencies including Ogilvy, I realized
                   that the best design work comes from deep understanding and
                   genuine partnership. Wisecap was born from the belief that
                   brands deserve more than cookie cutter solutions.
                 </p>
 
-                <p className="text-[#333] text-xl font-light text-justify">
+                <p className="text-[#333] text-xl font-light">
                   We combine Indian craft heritage with international design
                   thinking. Our clients become partners their success becomes
                   our legacy.
@@ -229,7 +229,7 @@ const About = () => {
               What We Do
             </p>
             <h2 className="text-black leading-snug md:leading-tight mb-4 sm:mb-6 
-                 text-lg xs:text-xl sm:text-3xl md:text-5xl lg:text-5xl tracking-wide font-Epilogue font-extralight">
+                 text-4xl xs:text-xl sm:text-3xl md:text-5xl lg:text-5xl tracking-wide font-Epilogue font-extralight">
               Designing Timeless Identities That Blend Culture,<br /> Emotion, and Craft
             </h2>
           </div>
@@ -275,7 +275,7 @@ const About = () => {
   <div className="relative max-w-7xl mx-auto px-6 lg:px-12">
     {/* Heading */}
     <div className="text-center mb-20">
-      <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-wc-primary-deep mb-4 md:font-extralight mb-8">
+      <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-extrathin text-wc-primary-deep mb-4 md:font-extralight mb-8">
         Meet the Studio
       </h2>
       <p className="text-xl font-light text-gray-600 max-w-2xl mx-auto">
@@ -301,7 +301,7 @@ const About = () => {
             Sandeep N
           </h3>
           <p className="text-[#B85A3D] font-medium mb-3">
-            Founder & Creative Director
+           Creative Director & Design Lead
           </p>
 
           <p className="text-gray-700 text-base leading-relaxed mb-6 max-w-md">
@@ -346,10 +346,10 @@ const About = () => {
           <h3 className="text-xl font-semibold text-[#1E2A47] mt-2">
             Vinod
           </h3>
-          <p className="text-[#B85A3D] font-medium mb-3">Design Lead</p>
+          <p className="text-[#B85A3D] font-medium mb-3"> Creative Director & Design Lead</p>
 
           <p className="text-gray-700 text-base leading-relaxed mb-6 max-w-md">
-            Craft-obsessed designer with 8 years in packaging and identity. Blends art and precision to tell brand stories that last.
+            Craft-obsessed designer with 2 years in packaging and identity. Blends art and precision to tell brand stories that last.
           </p>
 
           <div className="flex flex-wrap justify-center gap-2 mb-6">
