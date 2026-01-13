@@ -37,6 +37,7 @@ const Header: React.FC = () => {
     { name: 'Works', href: '/works' },
     { name: 'Services', href: '/services' },
     { name: 'Careers', href: '/careers' },
+    { name: 'Portfolio', href: '/portfolio' },
   ];
 
   // Tailwind Class for the mobile menu panel transition: RIGHT SLIDE-IN
