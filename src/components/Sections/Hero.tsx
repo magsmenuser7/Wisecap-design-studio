@@ -5,18 +5,23 @@ import React from 'react';
 const Hero: React.FC = () => {
   return (
     <section
-      className="relative min-h-screen flex flex-col justify-between overflow-hidden 
-                 bg-gradient-to-r from-[#333333] via-[#4A4A4A] to-white/0"
+      className="relative min-h-screen "
+      style={{
+        backgroundImage: `url('src/assets/images/logo/banners/ME Branding options Revised.jpg')`,
+        backgroundSize: 'contain',
+        backgroundPosition: 'center',
+        backgroundRepeat: 'no-repeat',
+      }}
     >
-      {/* Main Content */}
-      <div
+     
+      {/* <div
         className="relative max-w-7xl w-full flex-grow flex items-center
                    pt-24 pb-20 mx-auto"
       >
-        {/* ✅ Exact same horizontal padding as your navbar/logo container */}
+       
         <div className="w-full text-left px-6 sm:px-8 md:px-6 lg:px-6 xl:px-6 2xl:px-6">
           
-          {/* Primary Headline */}
+          
           <h1
             className="text-transparent bg-clip-text
                        bg-gradient-to-r from-[#ddbf74] via-[#00FFF6] to-[#5D42FF]
@@ -29,7 +34,7 @@ const Hero: React.FC = () => {
             <span className="font-Epilogue font-extralight">A Design</span>
           </h1>
 
-          {/* Subtitle */}
+         
           <p
             className="text-white font-extralight mt-4
                        text-lg sm:text-xl md:text-2xl lg:text-3xl xl:text-3xl 2xl:text-3xl"
@@ -37,7 +42,7 @@ const Hero: React.FC = () => {
             That Speaks Louder than Words
           </p>
         </div>
-      </div>
+      </div> */}
 
       {/* Scroll Indicator */}
       <div className="absolute bottom-10 left-1/2 transform -translate-x-1/2">

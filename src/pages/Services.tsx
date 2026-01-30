@@ -61,7 +61,7 @@ const Services: React.FC = () => {
       {/* HERO SECTION WITH OVERLAY */}
       {/* ========================== */}
 <section
-  className="relative flex items-center justify-center min-h-[60vh] sm:min-h-[70vh] md:min-h-[80vh] lg:min-h-[100vh] bg-center bg-cover bg-no-repeat overflow-hidden px-4 sm:px-6 md:px-10"
+  className="relative flex items-center justify-center min-h-[40vh] sm:min-h-[70vh] md:min-h-[80vh] lg:min-h-[40vh] bg-center bg-cover bg-no-repeat overflow-hidden px-4 sm:px-6 md:px-10"
   style={{ backgroundImage: `url(${bannerservices})` }}
 >
   {/* Overlay */}

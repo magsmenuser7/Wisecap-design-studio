@@ -1,5 +1,5 @@
 import { Project, Service, Package, TeamMember, BlogPost, Job } from '../types/cms';
-import featuredimage1 from '../assets/images/logo/ragainfra/Button-Badge-Mockup1.jpg'
+import featuredimage1 from '../assets/images/logo/works/30.jpg'
 import featuredimage2 from '../assets/images/logo/indilocal/indilocal-logo-two.jpg'
 import featuredimage3 from '../assets/images/logo/works/image1.jpg'
 import featuredimage4 from '../assets/images/logo/works/image2.jpg'
@@ -26,8 +26,8 @@ import featuredimage23 from '../assets/images/logo/works/LUN-9.jpg'
 import featuredimage24 from '../assets/images/logo/works/3.jpg'
 import featuredimage25 from '../assets/images/logo/banners/harmony-banner.jpeg'
 
-
-
+import featuredimage26 from '../assets/images/logo/works/Wisecap Brochure _Vasu (23-01-2026).png'
+import featuredimage27 from '../assets/images/logo/works/22.jpg'
 
 
 
@@ -42,50 +42,10 @@ import featuredimage25 from '../assets/images/logo/banners/harmony-banner.jpeg'
 
 
 export const projects: Project[] = [
-  {
-    id: '1',
-    title: 'Chakrasiddh',
-    slug: 'Chakrasiddh',
-    heroImage: featuredimage3,
-    clientName: 'Chakrasiddh',
-    industry: 'Food & Beverage',
-    year: 2024,
-    services: [],
-    shortBlurb: 'A premium coffee brand rooted in Indian heritage, crafted for modern palates.',
-    problemStatement: 'Ritual Coffee was invisible in the premium segment. Their story of single-origin sourcing and artisanal roasting wasn\'t reaching discerning coffee drinkers.',
-    storyboard: [
-      {
-        id: '1',
-        image: featuredimage1,
-        caption: 'Discovery: Understanding the ritual of coffee in Indian homes',
-        order: 1
-      },
-      {
-        id: '2',
-        image: featuredimage2,
-        caption: 'Strategy: Heritage meets modernity through careful craft',
-        order: 2
-      }
-    ],
-    solution: 'We created a visual identity that honors traditional coffee culture while appealing to contemporary aesthetics. Hand-drawn illustrations merge with clean typography.',
-    gallery: [
-      'https://images.pexels.com/photos/4226876/pexels-photo-4226876.jpeg?auto=compress&cs=tinysrgb&w=1200',
-      'https://images.pexels.com/photos/4226140/pexels-photo-4226140.jpeg?auto=compress&cs=tinysrgb&w=1200'
-    ],
-    outcomes: [
-      { metric: 'Shelf Sales', value: '+28%', description: 'increase in premium segment' },
-      { metric: 'Brand Recall', value: '3.2x', description: 'higher unaided awareness' }
-    ],
-    testimonial: {
-      quote: 'Wisecap transformed our story into something customers could feel and taste.',
-      author: 'Priya Sharma',
-      role: 'Founder',
-      company: 'Ritual Coffee'
-    },
-    seoTitle: 'Ritual Coffee Brand Identity - Wisecap Design Studio',
-    seoDescription: 'How we helped Ritual Coffee increase shelf sales by 28% through heritage-driven brand design.',
-    ogImage: 'https://images.pexels.com/photos/4226876/pexels-photo-4226876.jpeg?auto=compress&cs=tinysrgb&w=1200'
-  },
+
+  
+   
+  
   {
     id: '2',
     title: 'Indilocal',
@@ -117,37 +77,7 @@ export const projects: Project[] = [
     seoDescription: 'Authentic packaging design that increased trust scores by 45% for wellness brand.',
     ogImage: 'https://images.pexels.com/photos/7979267/pexels-photo-7979267.jpeg?auto=compress&cs=tinysrgb&w=1200'
   },
-  {
-    id: '3',
-    title: 'Raaga Infra',
-    slug: 'Raaga Infra',
-    heroImage: featuredimage1,
-    clientName: 'Raaga Infra',
-    industry: 'Health & Wellness',
-    year: 2024,
-    services: [],
-    shortBlurb: 'Modern Ayurvedic wellness products with authentic, trust-building packaging.',
-    problemStatement: 'Pure Elements struggled to convey authenticity in a crowded wellness market filled with flashy, superficial branding.',
-    storyboard: [
-      {
-        id: '1',
-        image: 'https://images.pexels.com/photos/7979267/pexels-photo-7979267.jpeg?auto=compress&cs=tinysrgb&w=800',
-        caption: 'Research: Ancient wisdom meets modern science',
-        order: 1
-      }
-    ],
-    solution: 'Clean, minimal packaging that lets the product quality speak. Earthy tones and botanical illustrations build immediate trust.',
-    gallery: [
-      'https://images.pexels.com/photos/7979267/pexels-photo-7979267.jpeg?auto=compress&cs=tinysrgb&w=1200'
-    ],
-    outcomes: [
-      { metric: 'Trust Score', value: '+45%', description: 'in consumer research' },
-      { metric: 'Retail Adoption', value: '2x', description: 'faster placement' }
-    ],
-    seoTitle: 'Ayurvedic Wellness Packaging Design - Wisecap Design Studio',
-    seoDescription: 'Authentic packaging design that increased trust scores by 45% for wellness brand.',
-    ogImage: 'https://images.pexels.com/photos/7979267/pexels-photo-7979267.jpeg?auto=compress&cs=tinysrgb&w=1200'
-  },
+  
   {
     id: '4',
     title: 'Bubble Fresh Laundromart',
@@ -210,6 +140,52 @@ export const projects: Project[] = [
     seoTitle: 'Ayurvedic Wellness Packaging Design - Wisecap Design Studio',
     seoDescription: 'Authentic packaging design that increased trust scores by 45% for wellness brand.',
     ogImage: 'https://images.pexels.com/photos/7979267/pexels-photo-7979267.jpeg?auto=compress&cs=tinysrgb&w=1200'
+  },
+
+
+   {
+    id: '23',
+    title: 'Garthapuri',
+    slug: 'Garthapuri',
+    heroImage: featuredimage26,
+    clientName: 'Garthapuri',
+    industry: 'Food & Beverage',
+    year: 2024,
+    services: [],
+    shortBlurb: 'A premium coffee brand rooted in Indian heritage, crafted for modern palates.',
+    problemStatement: 'Ritual Coffee was invisible in the premium segment. Their story of single-origin sourcing and artisanal roasting wasn\'t reaching discerning coffee drinkers.',
+    storyboard: [
+      {
+        id: '1',
+        image: featuredimage26,
+        caption: 'Discovery: Understanding the ritual of coffee in Indian homes',
+        order: 1
+      },
+      {
+        id: '2',
+        image: featuredimage26,
+        caption: 'Strategy: Heritage meets modernity through careful craft',
+        order: 2
+      }
+    ],
+    solution: 'We created a visual identity that honors traditional coffee culture while appealing to contemporary aesthetics. Hand-drawn illustrations merge with clean typography.',
+    gallery: [
+      'https://images.pexels.com/photos/4226876/pexels-photo-4226876.jpeg?auto=compress&cs=tinysrgb&w=1200',
+      'https://images.pexels.com/photos/4226140/pexels-photo-4226140.jpeg?auto=compress&cs=tinysrgb&w=1200'
+    ],
+    outcomes: [
+      { metric: 'Shelf Sales', value: '+28%', description: 'increase in premium segment' },
+      { metric: 'Brand Recall', value: '3.2x', description: 'higher unaided awareness' }
+    ],
+    testimonial: {
+      quote: 'Wisecap transformed our story into something customers could feel and taste.',
+      author: 'Priya Sharma',
+      role: 'Founder',
+      company: 'Ritual Coffee'
+    },
+    seoTitle: 'Ritual Coffee Brand Identity - Wisecap Design Studio',
+    seoDescription: 'How we helped Ritual Coffee increase shelf sales by 28% through heritage-driven brand design.',
+    ogImage: 'https://images.pexels.com/photos/4226876/pexels-photo-4226876.jpeg?auto=compress&cs=tinysrgb&w=1200'
   },
 
   {
@@ -306,12 +282,44 @@ export const projects: Project[] = [
     seoDescription: 'Authentic packaging design that increased trust scores by 45% for wellness brand.',
     ogImage: 'https://images.pexels.com/photos/7979267/pexels-photo-7979267.jpeg?auto=compress&cs=tinysrgb&w=1200'
   },
+
+  {
+    id: '3',
+    title: 'Raaga Infra',
+    slug: 'Raaga Infra',
+    heroImage: featuredimage1,
+    clientName: 'Raaga Infra',
+    industry: 'Health & Wellness',
+    year: 2024,
+    services: [],
+    shortBlurb: 'Modern Ayurvedic wellness products with authentic, trust-building packaging.',
+    problemStatement: 'Pure Elements struggled to convey authenticity in a crowded wellness market filled with flashy, superficial branding.',
+    storyboard: [
+      {
+        id: '1',
+        image: 'https://images.pexels.com/photos/7979267/pexels-photo-7979267.jpeg?auto=compress&cs=tinysrgb&w=800',
+        caption: 'Research: Ancient wisdom meets modern science',
+        order: 1
+      }
+    ],
+    solution: 'Clean, minimal packaging that lets the product quality speak. Earthy tones and botanical illustrations build immediate trust.',
+    gallery: [
+      'https://images.pexels.com/photos/7979267/pexels-photo-7979267.jpeg?auto=compress&cs=tinysrgb&w=1200'
+    ],
+    outcomes: [
+      { metric: 'Trust Score', value: '+45%', description: 'in consumer research' },
+      { metric: 'Retail Adoption', value: '2x', description: 'faster placement' }
+    ],
+    seoTitle: 'Ayurvedic Wellness Packaging Design - Wisecap Design Studio',
+    seoDescription: 'Authentic packaging design that increased trust scores by 45% for wellness brand.',
+    ogImage: 'https://images.pexels.com/photos/7979267/pexels-photo-7979267.jpeg?auto=compress&cs=tinysrgb&w=1200'
+  },
   {
     id: '9',
-    title: 'Crafting Design',
-    slug: 'Crafting Design',
-    heroImage: featuredimage12,
-    clientName: 'Crafting Design',
+    title: 'Signature Dine',
+    slug: 'Signature Dine',
+    heroImage: featuredimage27,
+    clientName: 'Signature Dine',
     industry: 'Health & Wellness',
     year: 2024,
     services: [],
@@ -740,38 +748,52 @@ export const projects: Project[] = [
     seoDescription: 'Authentic packaging design that increased trust scores by 45% for wellness brand.',
     ogImage: 'https://images.pexels.com/photos/7979267/pexels-photo-7979267.jpeg?auto=compress&cs=tinysrgb&w=1200'
   },
-              {
-    id: '23',
-    title: 'Harmony',
-    slug: 'Harmoney',
-    heroImage: featuredimage25,
-    clientName: 'Harmoney',
-    industry: 'Health & Wellness',
+  {
+    id: '1',
+    title: 'Chakrasiddh',
+    slug: 'Chakrasiddh',
+    heroImage: featuredimage3,
+    clientName: 'Chakrasiddh',
+    industry: 'Food & Beverage',
     year: 2024,
     services: [],
-    shortBlurb: 'Modern Ayurvedic wellness products with authentic, trust-building packaging.',
-    problemStatement: 'Pure Elements struggled to convey authenticity in a crowded wellness market filled with flashy, superficial branding.',
+    shortBlurb: 'A premium coffee brand rooted in Indian heritage, crafted for modern palates.',
+    problemStatement: 'Ritual Coffee was invisible in the premium segment. Their story of single-origin sourcing and artisanal roasting wasn\'t reaching discerning coffee drinkers.',
     storyboard: [
       {
         id: '1',
-        image: 'https://images.pexels.com/photos/7979267/pexels-photo-7979267.jpeg?auto=compress&cs=tinysrgb&w=800',
-        caption: 'Research: Ancient wisdom meets modern science',
+        image: featuredimage1,
+        caption: 'Discovery: Understanding the ritual of coffee in Indian homes',
         order: 1
+      },
+      {
+        id: '2',
+        image: featuredimage2,
+        caption: 'Strategy: Heritage meets modernity through careful craft',
+        order: 2
       }
     ],
-    solution: 'Clean, minimal packaging that lets the product quality speak. Earthy tones and botanical illustrations build immediate trust.',
+    solution: 'We created a visual identity that honors traditional coffee culture while appealing to contemporary aesthetics. Hand-drawn illustrations merge with clean typography.',
     gallery: [
-      'https://images.pexels.com/photos/7979267/pexels-photo-7979267.jpeg?auto=compress&cs=tinysrgb&w=1200'
+      'https://images.pexels.com/photos/4226876/pexels-photo-4226876.jpeg?auto=compress&cs=tinysrgb&w=1200',
+      'https://images.pexels.com/photos/4226140/pexels-photo-4226140.jpeg?auto=compress&cs=tinysrgb&w=1200'
     ],
     outcomes: [
-      { metric: 'Trust Score', value: '+45%', description: 'in consumer research' },
-      { metric: 'Retail Adoption', value: '2x', description: 'faster placement' }
+      { metric: 'Shelf Sales', value: '+28%', description: 'increase in premium segment' },
+      { metric: 'Brand Recall', value: '3.2x', description: 'higher unaided awareness' }
     ],
-    seoTitle: 'Ayurvedic Wellness Packaging Design - Wisecap Design Studio',
-    seoDescription: 'Authentic packaging design that increased trust scores by 45% for wellness brand.',
-    ogImage: 'https://images.pexels.com/photos/7979267/pexels-photo-7979267.jpeg?auto=compress&cs=tinysrgb&w=1200'
+    testimonial: {
+      quote: 'Wisecap transformed our story into something customers could feel and taste.',
+      author: 'Priya Sharma',
+      role: 'Founder',
+      company: 'Ritual Coffee'
+    },
+    seoTitle: 'Ritual Coffee Brand Identity - Wisecap Design Studio',
+    seoDescription: 'How we helped Ritual Coffee increase shelf sales by 28% through heritage-driven brand design.',
+    ogImage: 'https://images.pexels.com/photos/4226876/pexels-photo-4226876.jpeg?auto=compress&cs=tinysrgb&w=1200'
   },
    
+  
    
 ];
 
@@ -1115,9 +1137,10 @@ export const jobs: Job[] = [
     ],
     skillsRequired: [
       'Versatile drawing and digital illustration skills',
-      'Ability to adapt across industries',
+      
       'Portfolio that shows originality',
-      'Proficiency in illustration software'
+      'Proficiency in illustration software',
+      '2-4 years experience preferred'
     ],
     portfolioRequirements: [
       'Original illustration work',
@@ -1140,8 +1163,9 @@ export const jobs: Job[] = [
     skillsRequired: [
       'Strong portfolio even if fresher',
       'Eagerness to learn, discipline to deliver',
-      'Basic proficiency in design software',
-      'Attention to detail and craft'
+      
+      'Attention to detail and craft',
+      '0-2 years of experience preferred'
     ],
     portfolioRequirements: [
       'Student or personal project work',

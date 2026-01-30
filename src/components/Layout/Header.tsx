@@ -108,7 +108,7 @@ const Header: React.FC = () => {
           {/* Close button inside the panel (white/light for dark background) */}
           <button
             onClick={() => setIsOpen(false)}
-            className="text-white hover:text-orange-500 transition-colors duration-180"
+            className="text-white hover:text-[#ddbf74] transition-colors duration-180"
           >
             <X size={28} />
           </button>
@@ -120,7 +120,7 @@ const Header: React.FC = () => {
             <a
               // key={item.name}
               href={item.href}
-              className="block text-xl font-semibold text-white hover:text-orange-500 transition-colors duration-180 border-b border-gray-600 pb-2"
+              className="block text-xl font-semibold text-white hover:text-[#ddbf74] transition-colors duration-180 border-b border-gray-600 pb-2"
               onClick={handleLinkClick}
             >
               {item.name}

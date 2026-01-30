@@ -9,8 +9,8 @@ import { PenTool, Layers, FileText, Package, Heart } from "lucide-react";
 import aboutimage from '../assets/images/logo/banners/2.png'
 import aboutimage2 from '../assets/images/logo/banners/3.png'
 import aboutimage3 from '../assets/images/logo/banners/rigin.jpg'
-
-
+import founder from '../assets/images/logo/banners/24e47c01-b6be-429d-b408-59ede36f386a.jpg'
+import pencils from '../assets/images/logo/banners/back-school-concept-top-view-colored-pencils.jpg'
 
 const About = () => {
 
@@ -62,13 +62,14 @@ const About = () => {
 
 <section
   id="about"
-  className="relative flex items-center justify-center min-h-[60vh] sm:min-h-[70vh] md:min-h-[80vh] lg:min-h-[100vh] bg-center bg-cover bg-no-repeat px-4 sm:px-6 md:px-10 text-center"
+  className="relative flex items-center justify-center min-h-[60vh] sm:min-h-[70vh] md:min-h-[30vh] lg:min-h-[40vh] bg-center bg-cover bg-no-repeat px-4 sm:px-6 md:px-10 text-center"
   style={{
-    backgroundImage: `url(${aboutimage3})`,
+    backgroundImage: `url(${pencils})`
+    ,
   }}
 >
   {/* Overlay */}
-  <div className="absolute inset-0 bg-black/60"></div>
+  <div className="absolute inset-0 bg-black/40"></div>
 
   {/* Content */}
   <div className="relative z-10 max-w-5xl mx-auto">
@@ -157,11 +158,11 @@ const About = () => {
               >
                 <div className="flex flex-col items-center lg:items-start">
                   <div className="relative w-40 h-40 mb-6">
-                    {/* <img
-                      src={founderPhoto}
+                    <img
+                      src={founder}
                       alt="Sandeep N"
                       className="w-full h-full rounded-full object-cover border-4 border-[#F6F4F1] shadow-lg"
-                    /> */}
+                    />
                     <div className="absolute inset-0 rounded-full bg-gradient-to-tr from-[#B85A3D]/20 to-transparent"></div>
                   </div>
 
@@ -269,11 +270,11 @@ const About = () => {
       </section>
 
 {/* Meet the Studio Section */}
-<section className="bg-[#F9F8F6] py-28 relative overflow-hidden">
+{/* <section className="bg-[#F9F8F6] py-28 relative overflow-hidden">
   <div className="absolute inset-0 bg-[radial-gradient(circle_at_top_right,_rgba(255,255,255,0.4)_0%,_transparent_70%)]"></div>
 
   <div className="relative max-w-7xl mx-auto px-6 lg:px-12">
-    {/* Heading */}
+    
     <div className="text-center mb-20">
       <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-extrathin text-wc-primary-deep mb-4 md:font-extralight mb-8">
         Meet the Studio
@@ -283,17 +284,17 @@ const About = () => {
       </p>
     </div>
 
-    {/* Team Grid */}
+   
     <div className="grid grid-cols-1 md:grid-cols-2 gap-10">
-      {/* Member 1 */}
+     
       <div className="bg-white shadow-lg hover:shadow-2xl  p-10 transition-all duration-500 hover:-translate-y-2 border border-[#eee]">
         <div className="flex flex-col items-center text-center">
           <div className="relative">
-            {/* <img
+            <img
               src={founderPhoto}
               alt="Sandeep N"
               className="w-32 h-32 rounded-full object-cover border-4 border-[#F9F8F6] shadow-md mb-6"
-            /> */}
+            />
             <div className="absolute inset-0  bg-gradient-to-tr from-[#B85A3D]/15 to-transparent"></div>
           </div>
 
@@ -331,15 +332,15 @@ const About = () => {
         </div>
       </div>
 
-      {/* Member 2 */}
+  
       <div className="bg-white shadow-lg hover:shadow-2xl p-10 transition-all duration-500 hover:-translate-y-2 border border-[#eee]">
         <div className="flex flex-col items-center text-center">
           <div className="relative">
-            {/* <img
-              src="https://images.unsplash.com/photo-1603415526960-f7e0328d2e32?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=60"
+            <img
+              src="../../assets/images/logo/banners/24e47c01-b6be-429d-b408-59ede36f386a.jpg"
               alt="Vinod Mehta"
               className="w-32 h-32 rounded-full object-cover border-4 border-[#F9F8F6] shadow-md mb-6"
-            /> */}
+            />
             <div className="absolute inset-0 bg-gradient-to-tr from-[#B85A3D]/15 to-transparent"></div>
           </div>
 
@@ -376,7 +377,7 @@ const About = () => {
       </div>
     </div>
   </div>
-</section>
+</section> */}
 
 
 

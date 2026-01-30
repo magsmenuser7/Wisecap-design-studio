@@ -4,7 +4,7 @@ import AnimatedText from '../components/UI/AnimatedText';
 import { Mail, Phone, MapPin, Clock } from 'lucide-react';
 import bannercontact from '../assets/images/logo/banners/banner-contact.jpg'; 
 import SNG01 from '../assets/images/logo/banners/SNG-01.jpg'
-
+import contactbanner from '../assets/images/logo/banners/art_icons_01_similar-[Converted].jpg'
 const Contact: React.FC = () => {
   return (
     <div className="min-h-screen bg-[#F6F4F1]">
@@ -12,8 +12,8 @@ const Contact: React.FC = () => {
       {/* HERO SECTION WITH OVERLAY BACKGROUND */}
       {/* ================================= */}
 <section
-  className="relative flex items-center justify-center min-h-[60vh] sm:min-h-[70vh] md:min-h-[80vh] lg:min-h-[100vh] bg-center bg-cover bg-no-repeat px-4 sm:px-6 md:px-10 text-center"
-  style={{ backgroundImage: `url(${SNG01})` }}
+  className="relative flex items-center justify-center min-h-[40vh] sm:min-h-[70vh] md:min-h-[80vh] lg:min-h-[40vh] bg-center bg-cover bg-no-repeat px-4 sm:px-6 md:px-10 text-center"
+  style={{ backgroundImage: `url(${contactbanner})` }}
 >
   {/* Overlay */}
   <div className="absolute inset-0 bg-black/70"></div>

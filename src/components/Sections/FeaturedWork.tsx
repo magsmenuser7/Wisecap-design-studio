@@ -75,7 +75,7 @@ const FeaturedWork: React.FC = () => {
   const rightColumnProjects = workItems.filter((_, index) => index % 2 !== 0);
 
   return (
-    <section className="py-24 bg-white sm:overflow-hidden overflow-hidden">
+    <section className="py-24 bg-gray-300 sm:overflow-hidden overflow-hidden">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
 
         {/* --- Global Header --- */}
