@@ -1,13 +1,14 @@
 
 
 import React from 'react';
+import HeroBackground from '../../assets/images/logo/banners/herobg.jpg';
 
 const Hero: React.FC = () => {
   return (
     <section
       className="relative min-h-screen "
       style={{
-        backgroundImage: `url('src/assets/images/logo/banners/ME Branding options Revised.jpg')`,
+        backgroundImage: `url(${HeroBackground})`,
         backgroundSize: 'contain',
         backgroundPosition: 'center',
         backgroundRepeat: 'no-repeat',
