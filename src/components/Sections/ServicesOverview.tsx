@@ -10,7 +10,8 @@ import homeservicesbrochuredesidn from "../../assets/images/logo/servicces/home-
 import homeservicepackagedesign from "../../assets/images/logo/servicces/home-service-package-design.jpg";
 import homeserviceposterdesign from "../../assets/images/logo/servicces/home-service-poster-design.jpg";
 import homeserviceweddingbranding from "../../assets/images/logo/servicces/home-service-wedding-branding.jpg";
-
+import aryan from '../../assets/images/logo/banners/Spell-C.jpg'
+import garthapuri from '../../assets/images/logo/works/Wisecap Brochure _Vasu (23-01-2026).png'
 const ServicesOverview = () => {
   const fadeInUp = {
     hidden: { opacity: 0, y: 60 },
@@ -22,7 +23,7 @@ const ServicesOverview = () => {
       title: "Logo Design",
       description:
         "Your logo is the face of your brand—make it count. We design timeless, distinctive logos that stand out. Crafted to reflect your unique identity and vision. Built for startups and established brands alike.",
-      image: Closeupmugmockuponthewood,
+      image: garthapuri,
     },
     {
       title: "Brand Kits Design",
@@ -54,6 +55,13 @@ const ServicesOverview = () => {
         "We craft elegant, custom wedding branding with heart. From invites to signage, every detail is thoughtfully designed. Our cohesive visuals reflect your unique love story. Create a memorable, immersive experience.",
       image: homeserviceweddingbranding,
     },
+    // {
+    //   title: "Crafting Design",
+    //   description:
+    //     "A designer’s desk filled with raw sketches, pencils, and brand drafts where every great idea begins. A creative workspace blending analog sketches with digital tools symbolizing the bridge between imagination and execution.",
+    //   image: aryan,
+
+    // },
   ];
 
   return (

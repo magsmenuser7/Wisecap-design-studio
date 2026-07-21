@@ -2,15 +2,15 @@ import React from 'react';
 import AnimatedText from '../UI/AnimatedText';
 import indilocallogotwo from '../../assets/images/logo/indilocal/indilocal-logo-two.jpg'
 import pouchbag from '../../assets/images/logo/indilocal/2-Pouch-Bag-023.jpg'
-
+import bgimage from '../../assets/images/logo/banners/wisecap-banner.jpg'
 const ClosingCTA: React.FC = () => {
   return (
     <section
-  className="relative py-20 bg-wc-primary-deep bg-center bg-cover bg-no-repeat sm:overflow-hidden overflow-hidden"
-  style={{ backgroundImage: `url(${pouchbag})` }}
+  className="relative py-20 bg-no-repeat bg-center bg-contain  sm:overflow-hidden overflow-hidden"
+  style={{ backgroundImage: `url(${bgimage})` }}
 >
   {/* Overlay */}
-  <div className="absolute inset-0 bg-black/70"></div>
+  <div className="absolute inset-0 bg-black/60"></div>
       <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
         {/* Animated Wisecap logo reveal */}
 <div className="mb-12">
@@ -20,7 +20,7 @@ const ClosingCTA: React.FC = () => {
     fill="none"
   >
     {/* Logo construction lines (sketch version) */}
-    <path 
+    {/* <path 
       d="M20 80 L50 20 L80 80 Z" 
       stroke="var(--wc-warm-gold)" 
       strokeWidth="3"   // increased from 1 → 3
@@ -29,8 +29,8 @@ const ClosingCTA: React.FC = () => {
       strokeDashoffset="200"
       className="animate-stroke-draw"
       style={{ filter: "drop-shadow(0 0 5px rgba(216,165,32,0.8))" }}
-    />
-    <circle 
+    /> */}
+    {/* <circle 
       cx="50" 
       cy="50" 
       r="25" 
@@ -44,9 +44,9 @@ const ClosingCTA: React.FC = () => {
         animationDelay: '0.5s',
         filter: "drop-shadow(0 0 5px rgba(8,166,168,0.8))"
       }}
-    />
+    /> */}
     {/* Final polished mark */}
-    <path 
+    {/* <path 
       d="M20 80 L50 20 L80 80 Z" 
       fill="var(--wc-warm-gold)" 
       className="opacity-0 animate-fade-in"
@@ -54,7 +54,7 @@ const ClosingCTA: React.FC = () => {
         animationDelay: '2s',
         filter: "drop-shadow(0 0 8px rgba(216,165,32,0.9))"
       }}
-    />
+    /> */}
   </svg>
 </div>
 

@@ -4,6 +4,9 @@ import AnimatedText from '../components/UI/AnimatedText';
 import aboutwisecap from '../assets/images/logo/works/works-image-2.jpeg';
 import servicebrandkitsdesign from "../assets/images/logo/servicces/services-banner.png";
 import harmonybanner from '../assets/images/logo/banners/harmony-banner.jpeg';
+import designinnovative from '../assets/images/logo/banners/495fd867-27ab-48f3-b5a0-8e2aa1f81f35.jpg'
+import raagainfra from '../assets/images/logo/works/30.jpg'
+
 
 // Define the Project type
 interface Project {
@@ -43,7 +46,7 @@ const DualImageCard: React.FC<{ project: Project }> = ({ project }) => {
                    flex items-center transition-all duration-300 ease-in-out overflow-hidden"
       >
         <div className="px-4 py-2 text-white w-full">
-          <h3 className="text-lg md:text-xl font-Epilogue font-extralight line-clamp-1">{project.title}</h3>
+          <h3 className="text-lg md:text-xl font-Epilogue line-clamp-1">{project.title}</h3>
           <p className="text-xs uppercase tracking-wider opacity-80 line-clamp-1">
             {/* {project.clientName} &bull; {project.year} */}
           </p>
@@ -63,25 +66,20 @@ const Works: React.FC = () => {
   return (
     <>
       {/* ===== Top Banner Section ===== */}
-<section
-  className="relative flex items-center justify-center min-h-[60vh] sm:min-h-[70vh] md:min-h-[80vh] lg:min-h-[100vh] bg-center bg-cover bg-no-repeat px-4 sm:px-6 md:px-10 text-center"
-  style={{
-    backgroundImage: `url(${harmonybanner})`,
-  }}
+{/* <section
+  className=""
+ 
 >
-  {/* Overlay */}
-  <div className="absolute inset-0 bg-black/50"></div>
-
-  {/* Text Content */}
+  
   <div className="relative z-10 max-w-4xl mx-auto">
     <h1
       className="text-white leading-snug md:leading-tight mb-4 sm:mb-6 
                  text-lg xs:text-xl sm:text-4xl md:text-5xl lg:text-5xl tracking-wide font-Epilogue font-extralight"
     >
-      Creative designs that blend imagination and precision.
+      
     </h1>
   </div>
-</section>
+</section> */}
 
 
       {/* ===== Portfolio Section ===== */}

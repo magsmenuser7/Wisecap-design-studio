@@ -12,7 +12,7 @@ const Home: React.FC = () => {
   return (
     <>
       <Hero />
-      <DesignIdeology />
+      {/* <DesignIdeology /> */}
       <FeaturedWork />
       <WisecapProcess />
       <ServicesOverview />

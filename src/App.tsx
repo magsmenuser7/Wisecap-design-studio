@@ -21,6 +21,7 @@ import Careers from "./pages/Careers";
 import WorkDetails from "./pages/WorkDetails";
 import NewsletterViewer from "./pages/NewsletterViewer";
 
+
 function App() {
   return (
     <Router basename={import.meta.env.DEV ? "/Wisecap-design-studio" : "/"}>
@@ -40,11 +41,14 @@ function LayoutWrapper() {
 
   // Hide Header & Footer ONLY on `/portfolio`
   const hideLayout = path === "/portfolio";
+  const hideLayout1 = path === "/digital-marketing-proposal";
 
   return (
     <div className="min-h-screen bg-white overflow-x-hidden">
-      {!hideLayout && <Header />}
-
+      {/* {!hideLayout && <Header />} */}
+      {!(hideLayout || hideLayout1) && <Header />}
+      
+      
       <main>
         <Routes>
           <Route path="/" element={<Home />} />
@@ -55,13 +59,16 @@ function LayoutWrapper() {
           <Route path="/contact" element={<Contact />} />
           <Route path="/careers" element={<Careers />} />
           <Route path="/works/:slug" element={<WorkDetails />} />
+          
+
 
           {/* PDF Viewer Route */}
           <Route path="/:slug" element={<NewsletterViewer />} />
         </Routes>
       </main>
 
-      {!hideLayout && <Footer />}
+      {/* {!hideLayout && <Footer />} */}
+      {!(hideLayout || hideLayout1) && <Footer />}
     </div>
   );
 }

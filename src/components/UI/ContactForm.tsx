@@ -19,11 +19,11 @@ const ContactForm: React.FC = () => {
   const [isSubmitted, setIsSubmitted] = useState(false);
 
   const budgetOptions = [
-    '₹5L - ₹10L',
-    '₹10L - ₹25L',
-    '₹25L - ₹50L',
-    '₹50L - ₹1Cr',
-    '₹1Cr+'
+    '₹50k - ₹1L',
+    '₹1L - ₹2L',
+    '₹2L - ₹3L',
+    '₹4L - ₹5L',
+    '₹5L+'
   ];
 
   const serviceOptions = [
